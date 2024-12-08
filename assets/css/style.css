@@ -1,0 +1,5339 @@
+
+body{
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #666666;
+    overflow-x: hidden;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+label{
+    font-weight: 400;
+    color: #333333;
+}
+label .required{
+    color: #ff2727;
+    border-bottom: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    outline: none;
+}
+figure{
+    max-width: 100%;
+}
+input:focus{
+    outline: none;
+}
+a:hover, a:focus, a:visited, a:active,
+button:hover, button:focus, button:visited, button:active{
+    text-decoration: none;
+    outline: none;
+}
+
+.container{
+	width: 95% !important;
+}
+
+
+/* BIOLIFE ICON */
+@font-face {
+    font-family: 'biolife';
+    src: url('../fonts/biolifebbd0.eot?t4lhqt');
+    src: url('../fonts/biolifebbd0.eot?t4lhqt#iefix') format('embedded-opentype'),
+         url('../fonts/biolifebbd0.ttf?t4lhqt') format('truetype'),
+         url('../fonts/biolifebbd0.woff?t4lhqt') format('woff'),
+         url('../fonts/biolifebbd0.svg?t4lhqt#biolife') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.biolife-icon{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'biolife', sans-serif !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+    content: "\e900";
+}
+.icon-arteries-about:before {
+    content: "\e901";
+}
+.icon-capacity-about:before {
+    content: "\e902";
+}
+.icon-cart:before {
+    content: "\e903";
+}
+.icon-cart-mini:before {
+    content: "\e904";
+}
+.icon-close-menu:before {
+    content: "\e905";
+}
+.icon-comment:before {
+    content: "\e906";
+}
+.icon-clock:before {
+    content: "\e907";
+}
+.icon-location:before {
+    content: "\e908";
+}
+.icon-letter:before {
+    content: "\e909";
+}
+.icon-phone:before {
+    content: "\e90a";
+}
+.icon-fresh-drink:before {
+    content: "\e90b";
+}
+.icon-green-safety:before {
+    content: "\e90c";
+}
+.icon-grid:before {
+    content: "\e90d";
+}
+.icon-healthy-about:before {
+    content: "\e90e";
+}
+.icon-heart-bold:before {
+    content: "\e90f";
+}
+.icon-left-arrow:before {
+    content: "\e910";
+}
+.icon-like:before {
+    content: "\e911";
+}
+.icon-list:before {
+    content: "\e912";
+}
+.icon-login:before {
+    content: "\e913";
+}
+.icon-location2:before {
+    content: "\e914";
+}
+.icon-fruits:before {
+    content: "\e915";
+}
+.icon-broccoli-1:before {
+    content: "\e916";
+}
+.icon-beef:before {
+    content: "\e917";
+}
+.icon-fish:before {
+    content: "\e918";
+}
+.icon-fast-food:before {
+    content: "\e919";
+}
+.icon-honey:before {
+    content: "\e91a";
+}
+.icon-grape:before {
+    content: "\e91b";
+}
+.icon-onions:before {
+    content: "\e91c";
+}
+.icon-avocado:before {
+    content: "\e91d";
+}
+.icon-contain:before {
+    content: "\e91e";
+}
+.icon-fresh-juice:before {
+    content: "\e91f";
+}
+.icon-newsletter:before {
+    content: "\e920";
+}
+.icon-organic:before {
+    content: "\e921";
+}
+.icon-beer:before {
+    content: "\e922";
+}
+.icon-car:before {
+    content: "\e923";
+}
+.icon-schedule:before {
+    content: "\e924";
+}
+.icon-conversation:before {
+    content: "\e925";
+}
+.icon-heart-1:before {
+    content: "\e926";
+}
+.icon-title:before {
+    content: "\e927";
+}
+.icon-head-phone:before {
+    content: "\e928";
+}
+.icon-report:before {
+    content: "\e929";
+}
+.icon-search:before {
+    content: "\e92a";
+}
+.icon-suporter:before {
+    content: "\e92b";
+}
+.icon-grape2:before {
+    content: "\e92c";
+}
+.icon-broccoli:before {
+    content: "\e92d";
+}
+.icon-lemon:before {
+    content: "\e92e";
+}
+.icon-orange:before {
+    content: "\e92f";
+}
+.icon-blueberry:before {
+    content: "\e930";
+}
+/******************************************
+* Animation Effects                       *
+*******************************************/
+@-webkit-keyframes move-around-reverse{
+    0% { -webkit-transform: translate( 0, -10px); }
+    25% { -webkit-transform: translate( -10px, 0); }
+    50% { -webkit-transform: translate( 0, 10px); }
+    75% { -webkit-transform: translate( 10px, 0); }
+    100% { -webkit-transform: translate( 0, -10px); }
+}
+@keyframes move-around-reverse{
+    0% { transform: translate( 0, -10px); }
+    25% { transform: translate( -10px, 0); }
+    50% { transform: translate( 0, 10px); }
+    75% { transform: translate( 10px, 0); }
+    100% { transform: translate( 0, -10px); }
+}
+@-webkit-keyframes move-around{
+    0% { -webkit-transform: translate( 0, -10px); }
+    25% { -webkit-transform: translate( 10px, 0); }
+    50% { -webkit-transform: translate( 0, 10px); }
+    75% { -webkit-transform: translate( -10px, 0); }
+    100% { -webkit-transform: translate( 0, -10px); }
+}
+@keyframes move-around{
+    0% { transform: translate( 0, -10px); }
+    25% { transform: translate( 10px, 0); }
+    50% { transform: translate( 0, 10px); }
+    75% { transform: translate( -10px, 0); }
+    100% { transform: translate( 0, -10px); }
+}
+@-webkit-keyframes movebounce{
+    0% { -webkit-transform: translateY(0); }
+    50% { -webkit-transform: translateY(20px); }
+    100% { -webkit-transform: translateY(0); }
+}
+@keyframes movebounce{
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px);}
+    100% { transform: translateY(0); }
+}
+@-webkit-keyframes movebounce-x{
+    0% { -webkit-transform: translateX(0); }
+    50% { -webkit-transform: translateX(20px); }
+    100% { -webkit-transform: translateX(0); }
+}
+@keyframes movebounce-x{
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+@-webkit-keyframes preload_waiting{
+    75% { -webkit-transform: scale(0); }
+}
+@keyframes preload_waiting{
+    75% { transform: scale(0); }
+}
+/******************************************
+* Pre Loading                             *
+*******************************************/
+body{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+#biof-loading{
+    background-color: #F2F1EF;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    margin-top: 0;
+    top: 0;
+}
+#biof-loading .biof-loading-center{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#biof-loading .biof-loading-center-absolute{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+}
+.biof-loading-center-absolute .dot{
+    width: 20px;
+    height: 20px;
+    background-color: #05a503;
+    float: left;
+    margin-right: 20px;
+    margin-top: 65px;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.biof-loading-center-absolute .dot-one {
+    -webkit-animation: preload_waiting 1.5s infinite;
+    animation: preload_waiting 1.5s infinite;
+}
+.biof-loading-center-absolute .dot-two{
+    -webkit-animation: preload_waiting 1.5s infinite;
+    animation: preload_waiting 1.5s infinite;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+.biof-loading-center-absolute .dot-three {
+    -webkit-animation: preload_waiting 1.5s infinite;
+    animation: preload_waiting 1.5s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+/*********************/
+.btn-scroll-top{
+    color: #333333;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+    -webkit-transition:0.4s;
+    -o-transition:0.4s;
+    transition:0.4s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.btn-scroll-top i{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+}
+@media only screen and (max-width:767.98px){
+    .btn-scroll-top{
+        line-height:40px;
+        height:40px;
+        width:40px;
+        font-size: 40px;
+        bottom: 80px;
+        right: 30px;
+    }
+}
+.btn-scroll-top.showUp{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+}
+
+/**************************************/
+.biolife-carousel{
+    padding: 0;
+    margin: 0;
+}
+.biolife-carousel>li{
+    list-style: none;
+}
+.biolife-carousel>li:not(:first-child){
+    display: none;
+}
+.slick-initialized .slick-slide{
+    outline: none;
+}
+.biolife-carousel .row-item{
+    font-size: 0;
+    line-height: 0;
+}
+.biolife-carousel.row-space-29px .row-item+.row-item{
+    margin-top: 29px;
+}
+.slick-initialized .slick-arrow:not(.slick-disabled):hover{
+    cursor: pointer;
+}
+.slick-initialized .slick-arrow:not(.slick-disabled){
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+@media (min-width: 769px) {
+    .container {
+        padding: 0;
+    }
+}
+
+.price-contain ins,
+.sumary-product .product-attribute .price ins,
+.sumary-product .product-attribute .price del,
+.contain-product .info .price ins,
+.contain-product .info .price del,
+.minicart-item .left-info .price ins,
+.minicart-item .left-info .price del{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.sumary-product .product-attribute .price del,
+.contain-product .info .price del,
+.minicart-item .left-info .price del{
+    position: relative;
+    margin-left: 6px;
+}
+.price-contain del::after,
+.sumary-product .product-attribute .price del::after,
+.contain-product .info .price del::after,
+.minicart-item .left-info .price del::after{
+    content: '';
+    height: 1px;
+    background-color: #aaaaaa;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    right: -1px;
+    display: block;
+    z-index: 1;
+}
+.pr-detail-layout .info .price ins .price-amount,
+.sumary-product .product-attribute .price ins .price-amount{
+    font-size: 22px;
+}
+.contain-product.style-widget .product-thumb{
+    width: 82px;
+    display: inline-block;
+    float: left;
+}
+.contain-product.style-widget .info{
+    width: calc(100% - 82px);
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+}
+.contain-product.style-widget .info .price,
+.contain-product.style-widget .info .product-title,
+.contain-product.style-widget .info .categories{
+    text-align: left;
+}
+.contain-product.style-widget .info .categories{
+    margin-top: 3px;
+}
+.contain-product.style-widget .info .price{
+    margin-bottom: 0;
+}
+.contain-product.layout-default{
+    /*padding-bottom: 12px;*/
+    padding-bottom: 2px;
+ }
+.contain-product.layout-default .info .price{
+    margin-bottom: 5px;
+    font-weight: 900;
+    margin-top: -10px;
+    color: #000;
+}
+.contain-product__deal-layout .slide-down-box .message,
+.contain-product.layout-default .slide-down-box .message{
+    font-size: 15px;
+    color: #000000;
+    display: block;
+    line-height: 17px;
+    margin: 0 0 3px;
+    text-align: center;
+    padding: 0 15px;
+    font-weight: 600;
+}
+.pr-detail-layout .info .buttons,
+.contain-product__deal-layout .slide-down-box .buttons,
+.contain-product.layout-default .slide-down-box .buttons{
+    padding: 0 20px;
+    display: table;
+    width: 100%;
+}
+.pr-detail-layout .info .buttons .btn,
+.contain-product__deal-layout .slide-down-box .buttons .btn,
+.contain-product.layout-default .slide-down-box .buttons .btn{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.pr-detail-layout .info .buttons .btn:not(.add-to-cart-btn),
+.contain-product__deal-layout .slide-down-box .buttons .btn:not(.add-to-cart-btn),
+.contain-product.layout-default .slide-down-box .buttons .btn:not(.add-to-cart-btn){
+    width: 32px;
+    font-size: 16px;
+    color: #666666;
+}
+.pr-detail-layout .info .buttons .add-to-cart-btn,
+.contain-product__deal-layout .slide-down-box .buttons .add-to-cart-btn,
+.contain-product.layout-default .slide-down-box .buttons .add-to-cart-btn{
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #888888;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 9999px;
+    line-height: 1;
+    padding: 10px;
+}
+.pr-detail-layout .info .buttons .add-to-cart-btn:hover,
+.contain-product__deal-layout .slide-down-box .buttons .add-to-cart-btn:hover,
+.contain-product.layout-default .slide-down-box .buttons .add-to-cart-btn:hover{
+    background-color: blue;
+}
+.contain-product.layout-02{
+    display: inline-block;
+    width: 100%;
+}
+.advance-product-box_countdown{
+    border: 2px solid #e6e6e6;
+}
+.advance-product-box_countdown .contain-product .product-thumb{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.advance-product-box_countdown .contain-product .info{
+    padding-bottom: 26px;
+}
+.advance-product-box_countdown .biolife-countdown{
+    margin: 13px 0 0;
+}
+.advance-product-box_countdown .biolife-countdown>span{
+    padding: 5px 5px 7px;
+    min-width: 47px;
+}
+.advance-product-box_countdown .biolife-countdown .text{
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+
+
+
+.biolife-products-block .products-list{
+    padding: 0;
+    margin: 0;
+}
+.biolife-products-block .products-list .product-item{
+    list-style: none;
+}
+.biolife-carousel.nav-center-02 .slick-arrow,
+.biolife-carousel.nav-center-bold .slick-arrow,
+.biolife-carousel.nav-center .slick-arrow{
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -17px;
+    color: rgba(102,102,102,0.2);
+    z-index: 10;
+    margin-bottom: 0;
+    font-size: 33px;
+    cursor: pointer;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.biolife-carousel.nav-center-bold .slick-arrow{
+    font-size: 44px;
+}
+.products-list.biolife-carousel.nav-center-02 .slick-arrow{
+    -webkit-transition: opacity 1.2s ease;
+    -moz-transition: opacity 1.2s ease;
+    -o-transition: opacity 1.2s ease;
+    transition: opacity 1.2s ease;
+}
+.biolife-carousel.nav-center-bold .slick-arrow.prev,
+.biolife-carousel.nav-center .slick-arrow.prev{
+    left: -40px;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.biolife-carousel.nav-center-bold .slick-arrow.next,
+.biolife-carousel.nav-center .slick-arrow.next{
+    right: -40px;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+.biolife-carousel.nav-center-bold .slick-arrow.prev{
+    left: -44px;
+}
+.biolife-carousel.nav-center-bold .slick-arrow.next{
+    right: -44px;
+}
+.biolife-carousel.nav-center-02 .slick-arrow{
+    font-size: 30px
+}
+.biolife-carousel.nav-center-02 .slick-arrow.prev{
+    left: -20px;
+    padding-right: 14px;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+    display: none !important;
+}
+.biolife-carousel.nav-center-02 .slick-arrow.next{
+    right: -20px;
+    padding-left: 14px;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+    display: none !important;
+}
+.biolife-carousel.nav-center-02 .slick-arrow::before{
+    content: "\f104";
+    font-family: 'FontAwesome', sans-serif;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.biolife-carousel.nav-center-02 .slick-arrow.next::before{
+    content: "\f105";
+}
+.biolife-carousel.nav-center-02:hover .slick-arrow.prev,
+.biolife-carousel.nav-center-02:hover .slick-arrow.next,
+.biolife-carousel.nav-center-bold:hover .slick-arrow.prev,
+.biolife-carousel.nav-center-bold:hover .slick-arrow.next,
+.biolife-carousel.nav-center:hover .slick-arrow.prev,
+.biolife-carousel.nav-center:hover .slick-arrow.next{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+	display: none;
+}
+.biolife-carousel.nav-center-02 .slick-arrow:hover{
+    color: #444444;
+}
+.contain-product .product-thumb{
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.contain-product .product-thumb .lookup{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 0;
+    color: #666666;
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    right: 15px;
+    padding: 5px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.contain-product:hover .product-thumb .lookup{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 330ms ease 100ms;
+    -moz-transition: transform 330ms ease 100ms;
+    -o-transition: transform 330ms ease 100ms;
+    transition: transform 330ms ease 100ms;
+}
+.contain-product .product-thumb .labels{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.contain-product .product-thumb .labels>span{
+    display: inline-block;
+    float: left;
+    clear: left;
+    min-width: 54px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    background-color: #fa3535;
+    line-height: 22px;
+    padding: 0 5px;
+    font-weight: 700;
+}
+.contain-product .product-thumb .labels .new-label{
+    background-color: #32de04;
+}
+.contain-product .product-thumb .labels .feature-label{
+    background-color: #036dc7;
+}
+.products-list.biolife-carousel.slick-initialized .contain-product .product-thumb img,
+.products-list:not(.biolife-carousel) .contain-product .product-thumb img{
+    width: 100%;
+}
+.contain-product .info .categories{
+    display: block;
+    font-size: 15px;
+    color: #888888;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 13px;
+}
+.contain-product .info .product-title{
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px 10px 0;
+    text-align: center;
+    background-color: blue;
+    line-height: 30px;
+    border-radius: 0 0 5px 5px;
+}
+.contain-product .info .product-title a{
+    color: #ffffff;
+    display: inline-block;
+	font-size: 15px;
+	
+}
+.contain-product .info .price{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.pr-detail-layout{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
+}
+.pr-detail-layout .product-thumb,
+.pr-detail-layout .info,
+.pr-detail-layout .advance-info{
+    display: inline-block;
+    vertical-align: top;
+}
+.pr-detail-layout .product-thumb{
+    width: 31.036%;
+    float: left;
+}
+.pr-detail-layout .info{
+    width: 47.009%;
+    padding-left: 20px;
+    padding-right: 10px;
+    float: left;
+}
+.pr-detail-layout .advance-info{
+    width: 21.955%;
+    border-left: 1px solid #e6e6e6;
+    padding-left: 20px;
+    margin-top: 31px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    min-height: 167px;
+}
+.pr-detail-layout .info .categories{
+    text-align: left;
+    margin-top: 14px;
+    max-width: 356px;
+    display: block !important;
+}
+.pr-detail-layout .info .product-title{
+    text-align: left;
+    max-width: 356px;
+}
+.pr-detail-layout .info .excerpt{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    margin: 29px 0 0;
+    max-width: 356px;
+}
+.pr-detail-layout .info .price{
+    text-align: left;
+    margin: 23px 0 0;
+    max-width: 356px;
+}
+.pr-detail-layout .info .buttons{
+    padding: 0;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    max-width: 356px;
+}
+.pr-detail-layout .info .buttons .btn:not(.add-to-cart-btn){
+    width: 32px;
+    font-size: 16px;
+    color: #666666;
+}
+.pr-detail-layout .info .buttons .wishlist-btn{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    padding: 4px 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+}
+.pr-detail-layout .info .buttons .add-to-cart-btn{
+    padding: 14px;
+    display: inline-block;
+    min-width: 159px;
+}
+.pr-detail-layout .info .buttons .compare-btn{
+    padding: 5px 5px 4px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+.pr-detail-layout .info .buttons .compare-btn::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: #aaaaaa;
+    position: absolute;
+    left: -4px;
+    top: 4px;
+}
+.pr-detail-layout .advance-info .list{
+    padding: 0;
+    display: block;
+}
+.pr-detail-layout .advance-info .list li{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    padding-left: 13px;
+    position: relative;
+}
+.pr-detail-layout .advance-info .list li::before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 50%;
+    background-color: #666666;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+
+
+.single-layout.product-related-box{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.product-related-box ul{
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+.product-related-box .biolife-title-box{
+    margin-bottom: 31px;
+}
+.biolife-title-box{
+    text-align: center;
+}
+.biolife-title-box .biolife-icon{
+    display: inline-block;
+    margin: 0;
+    font-size: 35px;
+}
+.biolife-title-box .subtitle{
+    display: block;
+    margin: 6px 0 0;
+    font-size: 15px;
+    color: #666666;
+    line-height: 1;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+.biolife-title-box .main-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #222222;
+    display: block;
+    margin: 12px 0 0;
+    line-height: 1;
+}
+
+
+.btn.btn-thin{
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border: 2px solid #ffffff;
+}
+.btn.btn-thin:hover{
+    color: #ffffff;
+}
+.btn.btn-bold{
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 9999px;
+    text-align: center;
+    font-weight: 700;
+    padding: 12px;
+}
+.btn.btn-bold:hover{
+    background-color: #444444;
+}
+
+.slider-opt04__layout01,
+.slider-opt03__layout02,
+.slider-opt03__layout01{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.slider-opt03__layout01 .media{
+    z-index: 10;
+    background-image: url('../images/home-03/slide-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 660px;
+}
+.slider-opt03__layout01 .media .child-elememt{
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    right: 35%;
+    z-index: 5;
+    margin-top: 10px;
+    margin-right: -2px;
+    -webkit-transition: transform 1s ease 0.5s;
+    -moz-transition: transform 1s ease 0.5s;
+    -o-transition: transform 1s ease 0.5s;
+    transition: transform 1s ease 0.5s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.slider-opt03__layout01 .text-content{
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    right: 13%;
+    margin: 0 5px 0 0;
+    z-index: 20;
+    -webkit-transition: transform 0.7s ease 0.7s;
+    -moz-transition: transform 0.7s ease 0.7s;
+    -o-transition: transform 0.7s ease 0.7s;
+    transition: transform 0.7s ease 0.7s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
+    border-color: rgb(102, 102, 102);
+    padding: 20px 50px 40px;
+}
+.slick-slide.slick-active .slider-opt03__layout01 .text-content,
+.slick-slide.slick-active .slider-opt03__layout01 .media .child-elememt{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.slider-opt03__layout01 .text-content .first-line{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    color: #000000;
+    display: block;
+    margin: 0;
+}
+.slider-opt03__layout01 .text-content .second-line{
+    font-size: 60px;
+    line-height: 60px;
+    color: #333333;
+    font-weight: 700;
+    display: block;
+    margin: 0;
+    max-width: 365px;
+}
+.slider-opt03__layout01 .text-content .third-line{
+    font-size: 22px;
+    line-height: 1;
+    color: #000000;
+    display: block;
+    margin: 13px 0 0;
+}
+.slider-opt03__layout01 .buttons{
+    font-size: 0;
+    display: block;
+    line-height: 0;
+    margin: 36px 0 0;
+}
+.slider-opt03__layout01 .buttons .btn{
+    font-size: 14px;
+    border-radius: 9999px;
+    display: inline-block;
+    line-height: 1;
+    min-width: 147px;
+    text-align: center;
+    padding: 17px 10px 16px;
+    outline: none;
+    box-shadow: none;
+}
+.slider-opt03__layout01 .buttons .btn+.btn{
+    margin-left: 19px;
+}
+.slider-opt03__layout01 .buttons .btn-thin{
+    padding: 15px 10px 14px;
+    min-width: 177px;
+}
+.slider-opt03__layout01 .buttons .btn:hover{
+    background-color: #444444 !important;
+    border-color: #444444 !important;
+    color: #ffffff !important;
+}
+.slider-opt03__layout01.mode-02 .media{
+    background-image: url('../images/home-02/main-slide-01.jpg');
+    height: 955px;
+}
+.slider-opt03__layout01.mode-02.slide-bgr-02 .media{
+    background-image: url('../images/home-02/main-slide-02.jpg');
+}
+.slider-opt03__layout01.mode-02.slide-bgr-03 .media{
+    background-image: url('../images/home-02/main-slide-03.jpg');
+}
+.slider-opt03__layout01.mode-02 .buttons .btn-thin{
+    color: #ffffff;
+}
+.slider-opt03__layout01.mode-03 .media{
+    height: 1072px;
+}
+.slider-opt03__layout01.slide-bgr-mode03-01 .media{
+     background-image: url('../images/home-01/main-slide-01.jpg');
+ }
+.slider-opt03__layout01.slide-bgr-mode03-02 .media{
+    background-image: url('../images/home-01/main-slide-02.jpg');
+}
+.slider-opt03__layout01.slide-bgr-mode03-03 .media{
+    background-image: url('../images/home-01/main-slide-03.jpg');
+}
+.slider-opt03__layout02 .media{
+    z-index: 10;
+    background-image: url('../images/home-03/green-slide-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 560px;
+}
+.slider-opt03__layout02 .media.background-geen-02{
+    background-image: url('../images/home-03/green-slide-02.jpg');
+}
+.slider-opt03__layout02 .text-content{
+    display: inline-block;
+    max-width: 400px;
+    position: absolute;
+    top: 127px;
+    left: 35%;
+    z-index: 2;
+    margin-top: -4px;
+    margin-left: 3px;
+}
+.slider-opt04__layout01 .text-content .first-line,
+.slider-opt03__layout02 .text-content .first-line{
+    font-size: 30px;
+    line-height: 1;
+    color: #666666;
+    display: block;
+    margin: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+.slider-opt04__layout01 .text-content .second-line,
+.slider-opt03__layout02 .text-content .second-line{
+    font-size: 60px;
+    font-weight: 700;
+    color: #222222;
+    display: block;
+    margin: 1px 0 0;
+    line-height: 60px;
+}
+.slider-opt04__layout01 .text-content .third-line,
+.slider-opt03__layout02 .text-content .third-line{
+    font-size: 18px;
+    color: #444444;
+    display: block;
+    margin: 14px 0 0;
+    line-height: 1;
+}
+.slider-opt04__layout01 .buttons,
+.slider-opt03__layout02 .buttons{
+    margin: 37px 0 0;
+}
+.slider-opt04__layout01 .buttons .btn,
+.slider-opt03__layout02 .buttons .btn{
+    padding: 14px 10px 13px;
+    min-width: 147px;
+}
+.slider-opt04__layout01 .buttons .btn-thin,
+.slider-opt03__layout02 .buttons .btn-thin{
+    border: 2px solid #e6e6e6;
+    min-width: 177px;
+    padding: 12px 10px 11px;
+    margin-left: 19px;
+}
+.slider-opt04__layout01 .buttons .btn-thin:hover,
+.slider-opt03__layout02 .buttons .btn-thin:hover{
+    background-color: #444444;
+    border-color: #444444;
+    color: #ffffff;
+}
+.none-box-shadow .vertical-category-block>.wrap-menu{
+    box-shadow: none;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+.slider-opt04__layout01 .media{
+    z-index: 10;
+    background-image: url('../images/home-04/main_slide.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 578px;
+}
+.slider-opt04__layout01 .text-content{
+    display: inline-block;
+    max-width: 400px;
+    position: absolute;
+    top: 132px;
+    left: 70px;
+    z-index: 2;
+}
+.slider-opt04__layout01 .buttons .btn-thin,
+.slider-opt04__layout01 .text-content .first-line,
+.slider-opt04__layout01 .text-content .second-line,
+.slider-opt04__layout01 .text-content .third-line{
+    color: #ffffff;
+}
+li.slick-current .slider-opt04__layout01 .buttons .btn,
+li.slick-current .slider-opt04__layout01 .text-content .first-line,
+li.slick-current .slider-opt04__layout01 .text-content .second-line,
+li.slick-current .slider-opt04__layout01 .text-content .third-line{
+    animation-duration: 1.6s;
+    -webkit-animation-duration: 1.6s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: bounceInRight;
+    -webkit-animation-name: bounceInRight;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+li.slick-current .slider-opt04__layout01 .text-content .second-line{
+    animation-name: bounceInLeft;
+    -webkit-animation-name: bounceInLeft;
+}
+li.slick-current .slider-opt04__layout01 .text-content .third-line{
+    animation-name: bounceIn;
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+li.slick-current .slider-opt04__layout01 .buttons .btn{
+    animation-name: zoomIn;
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.slider-opt04__layout01 .buttons .btn.btn-bold:not(:hover){
+    background-color: #87be00;
+}
+.slider-opt04__layout01.light-version .buttons .btn-thin:not(:hover){
+    color: #333333;
+}
+.slider-opt04__layout01.first-slide .media{
+    background-image: url('../images/home-04/light-main_slide_01.jpg');
+}
+.slider-opt04__layout01.second-slide .media{
+    background-image: url('../images/home-04/light-main_slide_02.jpg');
+}
+.slider-opt04__layout01.third-slide .media{
+    background-image: url('../images/home-04/light-main_slide_03.jpg');
+}
+.slider-opt04__layout01.light-version .text-content .first-line{
+    color: #666666;
+}
+.slider-opt04__layout01.light-version .text-content .second-line{
+    color: #222222;
+}
+.slider-opt04__layout01.light-version .text-content .third-line{
+    color: #444444;
+}
+.slider-opt05{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 1;
+    background: url("../images/home-05/main-slide.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 474px;
+}
+.slider-opt05 .text-content{
+    display: inline-block;
+    max-width: 350px;
+    padding-top: 94px;
+    padding-left: 39px;
+    position: relative;
+    z-index: 10;
+}
+.slider-opt05 .text-content .first-line{
+    display: block;
+    margin: 0;
+    font-size: 26px;
+    color: #666666;
+    font-family: 'Playfair Display', sans-serif;
+}
+.slider-opt05 .text-content .second-line{
+    display: block;
+    margin: 5px 0 0;
+    font-size: 50px;
+    line-height: 60px;
+    color: #222222;
+    font-weight: 700;
+}
+.slider-opt05 .text-content .third-line{
+    display: block;
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #444444;
+    margin-left: 8px;
+}
+.slider-opt05 .text-content .buttons{
+    margin: 37px 0 0;
+}
+.slider-opt05 .text-content .btn.btn-bold{
+    min-width: 147px;
+}
+.slider-opt05 .text-content .btn.btn-bold:not(:hover){
+    background-color: #87be00;
+}
+.slider-opt05 .media{
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    top: 51px;
+    right: 0;
+}
+.slick-active .slider-opt05 .text-content .btn,
+.slick-active .slider-opt05 .text-content .third-line,
+.slick-active .slider-opt05 .text-content .second-line,
+.slick-active .slider-opt05 .text-content .first-line{
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.slick-active .slider-opt05 .text-content .second-line{
+    animation-duration: 1.4s;
+    -webkit-animation-duration: 1.4s;
+}
+.slick-active .slider-opt05 .text-content .third-line{
+    animation-duration: 1.6s;
+    -webkit-animation-duration: 1.6s;
+}
+.slick-active .slider-opt05 .text-content .btn{
+    animation-duration: 1.6s;
+    -webkit-animation-duration: 1.6s;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+.slick-active .slide_animation .buttons,
+.slick-active .slide_animation .third-line,
+.slick-active .slide_animation .first-line,
+.slick-active .slide_animation .second-line{
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: zoomIn;
+    -webkit-animation-name: zoomIn;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.slick-active .slide_animation.type_02 .second-line{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+.slick-active .slide_animation.type_02 .third-line{
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+.slick-active .slide_animation.type_02 .buttons{
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.biolife-quickview-inner .product-attribute{
+    padding-left: 20px;
+}
+.biolife-quickview-inner .media{
+    width: 45.6790123457%;
+}
+.biolife-quickview-inner .product-attribute .title{
+    font-size: 20px;
+    display: block;
+    margin: 19px 0 6px;
+    color: #222222;
+    font-weight: 600;
+}
+.biolife-quickview-inner .product-attribute .title a{
+    color: inherit;
+    display: inline-block;
+}
+.biolife-quickview-inner .product-attribute .rating .star-rating > span::before,
+.biolife-quickview-inner .product-attribute .rating .star-rating::before{
+    font-size: 14px;
+}
+.biolife-quickview-inner .price-contain{
+    margin-top: 10px;
+}
+.biolife-quickview-inner .price-contain .price-amount{
+    font-size: 16px;
+}
+.biolife-quickview-inner .price-contain ins .price-amount{
+    font-size: 24px;
+}
+.biolife-quickview-inner .product-attribute .excerpt{
+    font-size: 15px;
+    line-height: 24px;
+    color: #666666;
+    display: block;
+    margin: 18px 0 0;
+}
+.biolife-quickview-inner .from-cart{
+    margin-top: 33px;
+    display: block;
+    clear: both;
+}
+.biolife-quickview-inner .from-cart .buttons,
+.biolife-quickview-inner .from-cart .qty-input{
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+.biolife-quickview-inner .qty-input input{
+    display: inline-block;
+    width: 44px;
+    text-align: center;
+    border-top: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    border-left: 0;
+    border-right: 0;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    line-height: 1;
+    height: 41px;
+}
+.biolife-quickview-inner .qty-input .qty-btn{
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    position: relative;
+    width: 27px;
+    height: 41px;
+    vertical-align: top;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+.biolife-quickview-inner .qty-input .btn-down{
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+}
+.biolife-quickview-inner .qty-input .qty-btn::after,
+.biolife-quickview-inner .qty-input .qty-btn::before{
+    content: '';
+    display: block;
+    background-color: #7f7f7f;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 10px;
+    height: 2px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.biolife-quickview-inner .qty-input .btn-up::before{
+    left: 6px;
+}
+.biolife-quickview-inner .qty-input .btn-up::after{
+    height: 10px;
+    width: 2px;
+    left: 10px;
+}
+.biolife-quickview-inner .qty-input .qty-btn:hover::after,
+.biolife-quickview-inner .qty-input .qty-btn:hover::before{
+    background-color: #000000;
+}
+.biolife-quickview-inner .buttons .add-to-cart-btn{
+    padding: 11px 15px 10px;
+    min-width: 218px;
+    margin-left: 20px;
+}
+.biolife-quickview-inner .product-meta .product-atts{
+    display: block;
+    padding: 20px 0 23px;
+    margin: 0 0 17px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.biolife-quickview-inner .product-atts .product-atts-item{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222222;
+}
+.biolife-quickview-inner .product-atts-item .meta-title{
+    display: inline-block;
+    font-weight: 400;
+}
+.biolife-quickview-inner .product-atts-item .meta-list{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.biolife-quickview-inner .product-atts-item .meta-list li{
+    list-style: none;
+    display: inline-block;
+}
+.biolife-quickview-inner .product-atts-item .meta-list li:not(:last-child) a::after{
+    content: ',';
+}
+.biolife-quickview-inner .product-atts-item .meta-list li a{
+    color: #666666;
+}
+.biolife-quickview-inner .product-meta .sku{
+    font-size: 14px;
+    color: #333333;
+    display: block;
+    margin: 0;
+    line-height: 1;
+}
+.biolife-quickview-block .quickview-nav img{
+    display: inline-block;
+    border-width: 0;
+}
+.biolife-quickview-block .quickview-nav li.slick-current img{
+    border: 2px solid #ededed;
+}
+.biolife-quickview-inner .media .quickview-nav{
+    width: 230px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.biolife-quickview-inner .quickview-nav .slick-arrow{
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -8px;
+}
+.biolife-quickview-inner .quickview-nav .slick-arrow.next{
+    left: auto;
+    right: -11px;
+}
+.biolife-quickview-inner .quickview-nav .slick-arrow::before{
+    content: "\f104";
+    font-family: 'FontAwesome', sans-serif;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 14px;
+    color: #666666;
+    width: 11px;
+    text-align: left;
+}
+.biolife-quickview-inner .quickview-nav .slick-arrow.next::before{
+    text-align: right;
+    content: "\f105";
+}
+.contain-product.layout-default .slide-down-box .buttons .add-to-cart-btn i{
+    display: none;
+}
+/*-------------------------------*/
+.background-fafafa{
+    background-color: #fafafa;
+}
+.z-index-20{
+    z-index: 20;
+    position: relative;
+}
+.biolife-wrap-map{
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.biolife-wrap-map iframe{
+    width: 100%;
+}
+.banner-promotion-01{
+    line-height: 0;
+    font-size: 0;
+    display: inline-block;
+    width: 100%;
+}
+.top-banner-menu{
+    text-align: center;
+    margin: 8px 0 30px;
+}
+.mobile-menu-toggle{
+    line-height: 0;
+    display: none !important;
+}
+.mobile-menu-toggle span{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #333333;
+    float: left;
+    clear: left;
+}
+.header-area.layout-02 .mobile-menu-toggle span{
+    background-color: #ffffff;
+}
+.mobile-menu-toggle span+span{
+    margin-top: 5px;
+}
+.mobile-menu-toggle>a{
+    display: inline-block;
+}
+.header-area.layout-01 .mobile-menu-toggle>a{
+    padding: 15px 0;
+}
+.minicart-block.layout-02 .span-index .qty{
+    display: none;
+}
+/*===============================
+* 404 Page                      *
+ ===============================*/
+.page-404{
+    background-image: url(../images/404-bg.jpg);
+    background-position: center center;
+    margin-top: 15px;
+}
+.content-404{
+    max-width: 570px;
+    padding: 100px 0 130px;
+    display: block;
+    text-align: center;
+}
+.content-404 .heading{
+    font-size:90px;
+    font-weight:700;
+    margin-bottom:13px;
+    color:#e73918
+}
+.content-404 .title{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:20px;
+    color: #222222;
+}
+.content-404 p{
+    color:#666;
+    margin-bottom:45px;
+    font-size:16px
+}
+.content-404 .button{
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    border-radius: 30px;
+}
+.content-404 .button:before {
+    font-family: "FontAwesome";
+    content: "\f104";
+    display: inline-block;
+    width: 0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    opacity: 0;
+    text-align: left;
+}
+.sumary-product .product-attribute .price+div:not(.product-atts):not(.no-border-top){
+    border-top: 1px solid #e6e6e6;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.sumary-product .product-attribute .price ins + ins::before{
+    content: '-';
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grouped-product-list{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.grouped-product-list-item__label a:not(:hover){
+    color: #333333;
+}
+.grouped-product-list-item__label a{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    display: inline-block;
+}
+.quantity-box.type2 .qty-input input{
+    width: 85px;
+    font-size: 16px;
+    background-color: #fafafa;
+    border: 1px solid #f0f0f0;
+    font-weight: 600;
+}
+.sumary-product .product-attribute .grouped-product-list-item__price .price{
+    margin-top: 0;
+}
+.sumary-product .product-attribute .grouped-product-list-item__price .price ins .price-amount{
+    font-size: 17px;
+    font-weight: 700;
+    color: #333333;
+}
+.sumary-product .product-attribute .grouped-product-list-item__price .price del{
+    display: block;
+    margin: 0;
+}
+.sumary-product .product-attribute .grouped-product-list-item__price .price del .price-amount{
+    font-size: 16px;
+}
+.sumary-product .action-form .buttons.external-btn{
+    border-top: 0;
+    padding-top: 0;
+}
+.sumary-product .biolife-countdown{
+    text-align: left;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+/*===============================
+* Responsive Area               *
+ ===============================*/
+@media ( max-width: 1699px) {
+    .biolife-banner__promotion6 .media .img-moving.position-2,
+    .biolife-banner__promotion5 .media .position-2{
+        display: none;
+    }
+    .biolife-banner__promotion6 .banner-contain .text-content{
+        padding: 15px;
+        margin-left: 0;
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+@media ( max-width: 1199px) {
+    .biolife-banner__special .text-content .first-line{
+        font-size: 36px;
+    }
+    .biolife-banner__special .text-content .second-line{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .biolife-banner__special .text-content .third-line i,
+    .biolife-banner__special .text-content .third-line{
+        font-size: 32px;
+    }
+    .biolife-banner__special .product-detail .price-contain ins .price-amount{
+        font-size: 22px;
+    }
+    .header-area.layout-03 .live-info{
+        display: none;
+    }
+    .biolife-gird-banners .grid-panel-item.left-content,
+    .biolife-gird-banners .grid-panel-item.right-content{
+        width: 25%;
+    }
+    .contain-product__right-info-layout3{
+        padding: 0;
+    }
+    .contain-product__right-info-layout3 .info .buttons{
+        padding: 0;
+        padding-top: 20px;
+    }
+    .products-list.vertical-layout-02{
+        max-width: 100%;
+    }
+    .biolife-banner__special-03 .banner-contain{
+        background: none;
+    }
+    .biolife-banner__special-02 .banner-contain{
+        display: table;
+    }
+    .biolife-banner__special-02 .banner-contain .thumb,
+    .biolife-banner__special-02 .banner-contain .text-content{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .biolife-banner__special-02 .text-content{
+        position: static;
+        width: 355px;
+        margin: 0;
+    }
+    .biolife-banner__special-02 .text-content .text01{
+        font-size: 45px;
+        margin-bottom: 5px;
+        color: #888888;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .biolife-banner__special-02 .text-content .text02{
+        font-size: 35px;
+    }
+    .biolife-banner__special-02 .text-content .text04,
+    .biolife-banner__special-02 .text-content .text03{
+        font-size: 28px;
+    }
+    .biolife-banner__special-02 .text-content .text04 i{
+        font-size: 32px;
+    }
+    .biolife-banner__special-02 .product-detail{
+        margin-top: 30px;
+    }
+    .header-area.layout-01 .header-top{
+        margin-top: 18px;
+    }
+    .newsletter-block.layout-04 .wrap-title .texts{
+        text-align: left;
+    }
+    .newsletter-block.layout-04{
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .newsletter-block.layout-04 .wrap-title{
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .header-area.layout-02 .biolife-cart-info .minicart-contain a>.sub-total,
+    .header-area.layout-02 .biolife-cart-info .minicart-contain a>.title{
+        display: none;
+    }
+    .header-area .biolife-cart-info .login-item{
+        vertical-align: top;
+    }
+    .header-area .biolife-cart-info .login-item .login-link{
+        font-size: 0;
+    }
+    .products-category-box{
+        padding: 0;
+        height: auto;
+    }
+    .products-category-box .title{
+        margin-bottom: 40px;
+    }
+    .biolife-stretch-the-right-background>.bg_underground{
+        display: none;
+    }
+    .header-top .top-bar .social-list{
+        display: none;
+    }
+    .biolife-title-box__bold-style.mobile-tiny .title{
+        font-size: 22px;
+    }
+    .biolife-title-box.link-all .main-title{
+        font-size: 26px;
+    }
+    .biolife-title-box.link-all .blog-link{
+        display: none;
+    }
+    .biolife-banner__style-04 .text-content,
+    .biolife-banner__style-03 .text-content,
+    .biolife-banner__style-02 .text-content{
+        width: calc(100% - 30px);
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        display: inline-block;
+        margin-left: 15px;
+        background-color: rgba(255,255,255,0.8);
+        padding: 20px 10px;
+        min-height: 162px;
+        vertical-align: middle;
+    }
+    .biolife-banner__style-02 .text1,
+    .biolife-banner__style-02 .text2,
+    .biolife-banner__style-03 .text1,
+    .biolife-banner__style-03 .text2,
+    .biolife-banner__style-03 .text3{
+        color: #000000;
+    }
+    .biolife-banner__promotion2 .text-content .btn-thin{
+        border-color: #d6d6d6;
+    }
+    .biolife-banner__promotion2 .text-content{
+        z-index: 15;
+        position: relative;
+        padding: 20px 15px;
+        background-color: rgba(255,255,255,0.6);
+        box-shadow: 0 0 7px 0 rgba(130,130,130,0.2);
+        border-radius: 2px;
+    }
+    .biolife-banner__promotion3 .media,
+    .biolife-banner__promotion .media{
+        display: none;
+    }
+    .biolife-service__type01 .txt-show-01{
+        font-size: 100px;
+        line-height: 220px;
+    }
+    .biolife-service__type01 .txt-show-02{
+        font-size: 50px;
+        top: 30px;
+    }
+    .biolife-carousel.dots_ring_style .slick-dots{
+        bottom: 0;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    .post-item.style-bottom-info .post-content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .welcome-us-block{
+        text-align: center;
+        height: auto;
+        padding-bottom: 150px;
+    }
+    .welcome-us-block .text-wraper{
+        display: inline-block;
+        max-width: 503px;
+        margin: 90px 0 0;
+        padding: 10px;
+        background-color: rgba( 250, 250, 250, 0.8);
+        float: none;
+    }
+    .welcome-us-block .text-info{
+        margin-top: 0;
+    }
+    .welcome-us-block .qt-text,
+    .welcome-us-block .text-info{
+        width: 100%;
+    }
+    .login-on-checkout .form-row button{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .shpcart-subtotal-block{
+        margin-top: 70px;
+        border: 1px solid #e6e6e6;
+    }
+    .single-layout.product-tabs{
+        margin-top: 80px;
+    }
+    .sumary-product .product-attribute{
+        padding-right: 20px;
+    }
+    .mobile-block-global{
+        display: block;
+    }
+    body.global-panel-opened .mobile-block-global{
+        left: 0;
+    }
+    .top-functions-area .flt-item.group-on-mobile .wrap-selectors{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        margin-left: -225px;
+        margin-top: -162px;
+        background-color: #ffffff;
+        z-index: 999;
+        padding: 30px;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease;
+        visibility: hidden;
+        border-top: 3px solid red;
+    }
+    .top-functions-area .flt-item.group-on-mobile .selector-item{
+        width: 100%;
+        margin: 15px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .top-functions-area .flt-item.group-on-mobile .selector-item::before{
+        content: attr(data-title);
+        display: inline-block;
+        font-size: 15px;
+        float: left;
+    }
+    .top-functions-area .flt-item.group-on-mobile .nice-select{
+        border-radius: 0;
+        border: none;
+        padding: 0 20px 0 10px;
+        clear: none;
+    }
+    .top-functions-area .flt-item.group-on-mobile .nice-select:after{
+        right: 10px;
+    }
+    body.top-refine-opened .top-functions-area .flt-item.group-on-mobile .wrap-selectors{
+        visibility: visible;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    .top-functions-area .flt-item.group-on-mobile .flt-title{
+        display: none;
+    }
+    .top-functions-area .flt-item .btn-for-mobile,
+    .top-functions-area .flt-item .title-for-mobile,
+    .top-functions-area .flt-item .icon-for-mobile{
+        display: inline-block;
+    }
+}
+
+@media ( max-width: 991px){
+    .page-404{
+        background: #f4f4f4;
+        margin-top: 0;
+    }
+    .content-404{
+        margin: 0 auto;
+    }
+    .biolife-cat-box-item{
+        border: 1px solid #e6e6e6;
+    }
+    .biolife-cat-box-item .cat-info{
+        border: none;
+        margin: 20px 0 20px;
+        background-color: transparent;
+    }
+    .biolife-cat-box-item .cat-name{
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+        min-width: initial;
+    }
+    .biolife-cat-box-item .cat-number{
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+    .biolife-banner__style-14 .text-content,
+    .biolife-banner__style-13 .text-content{
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 15px;
+        right: 15px;
+        width: auto;
+        background: rgba(255,255,255,0.8);
+        padding: 30px 5px;
+    }
+    .biolife-banner__style-13 .text1,
+    .biolife-banner__style-14 .text1{
+        color: #000000;
+    }
+    .biolife-banner__style-14 .text2,
+    .biolife-banner__style-14 .text3,
+    .biolife-banner__style-13 .text2{
+        color: #333333;
+    }
+    .biolife-cart-info .icon-qty-combine .biolife-icon,
+    .mobile-search .open-searchbox .biolife-icon{
+        font-size: 24px;
+    }
+    .mobile-menu-toggle{
+        display: inline-block !important;
+    }
+    .minicart-block.layout-02 .icon-contain .biolife-icon{
+        color: #333333 !important;
+        font-size: 24px;
+    }
+    .minicart-block.layout-02 .icon-contain .span-index{
+        padding: 2px;
+        border: none;
+        position: relative;
+    }
+    .minicart-block.layout-02 .span-index .qty{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        display: inline-block;
+        margin: 0;
+        min-width: 19px;
+        padding: 1px 5px 2px;
+        color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        right: -8px;
+        bottom: 7px;
+    }
+    .minicart-block.layout-02 .icon-contain .btn-to-cart,
+    .minicart-block.layout-02 .icon-contain .sub-total{
+        display: none;
+    }
+    .biolife-banner__special-02 .banner-contain{
+        display: block;
+    }
+    .biolife-banner__special-02 .banner-contain .thumb,
+    .biolife-banner__special-02 .banner-contain .text-content{
+        display: block;
+    }
+    .biolife-banner__special-02 .text-content{
+        width: 100%;
+        border: 1px solid #eeeeee;
+        padding: 15px 15px 40px;
+    }
+    .mega-content .biolife-brand ul.brands{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .mega-content .biolife-brand ul.brands li{
+        width: 50%;
+        padding: 10px;
+    }
+    .mega-content .biolife-brand.vertical ul.brands{
+        width: 100%;
+        padding: 0;
+    }
+    .mega-content .biolife-brand.vertical ul.brands li{
+        margin: 0;
+        clear: none;
+        float: left;
+    }
+    .mega-content .biolife-brand.vertical ul.brands li:nth-child(2n+1){
+        clear: left;
+    }
+    .biolife-banner__grid:hover .banner-contain .cat-name{
+        color: #222222;
+    }
+    .biolife-banner__grid:not(.type-02) .banner-contain .cat-name::before{
+        content: none;
+    }
+    .biolife-title-box_in-countdown{
+        padding: 16px 18px 17px;
+    }
+    .biolife-quickview-block,
+    .contain-product .product-thumb .lookup{
+        display: none;
+    }
+    .header-area.layout-01 .header-bottom:not(.pre-sticky){
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    .header-area.layout-01{
+        background-position: center bottom;
+    }
+    .header-area.layout-01 .header-bottom .logo-for-mobile{
+        display: inline-block;
+        float: left;
+        margin-top: 5px;
+    }
+    .header-area.layout-01 .header-bottom .biolife-cart-info{
+        display: inline-block;
+        margin-top: 0;
+        float: right;
+    }
+    .footer.layout-01 .payment-methods ul,
+    .footer.layout-01 .copy-right-text{
+        text-align: center;
+    }
+    .biolife-banner__promotion5 .banner-contain{
+        overflow: hidden;
+    }
+    .biolife-banner__promotion5 .text-content{
+        margin: 0;
+        padding: 40px 15px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .biolife-banner__promotion5 .media .img-moving{
+        width: 900px;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+    }
+    .biolife-banner__detail-product .midle-info .pr-desc,
+    .biolife-banner__detail-product .midle-info .pr-atts{
+        max-width: 100%;
+    }
+    .biolife-banner__detail-product .midle-info{
+        display: inline-block;
+    }
+    .biolife-banner__detail-product .text-content{
+        text-align: center;
+        padding: 30px 15px;
+        border: 1px dashed #e6e6e6;
+        background: #fcfcfc;
+    }
+    .biolife-gird-banners .grid-panel,
+    .biolife-gird-banners .grid-panel .grid-panel-item,
+    .biolife-gird-banners .grid-panel-item.left-content,
+    .biolife-gird-banners .grid-panel-item.right-content{
+        display: block;
+        width: 100%;
+    }
+    .biolife-banner__grid:not(.type-02) .banner-contain .cat-name{
+        min-width: 150px;
+        padding: 20px 30px;
+        background-color: rgba(255,255,255,0.8);
+    }
+    .biolife-banner__grid .banner-contain .cat-name::before{
+        content: none;
+    }
+    .wrap-custom-menu.horizontal-menu-v2 ul.menu>li{
+        margin-bottom: 15px;
+    }
+    .footer-midle-pst .announce-text{
+        margin-top: 20px;
+    }
+    .header-area .biolife-cart-info .login-item{
+        display: none;
+    }
+    .top-banner-menu{
+        padding: 0;
+        margin-top: 0;
+    }
+    .top-banner-menu img{
+        width: 100%;
+    }
+    .grid-twice-item>li{
+        width: 100%;
+        margin-left: 0;
+    }
+    .grid-twice-item>li+li{
+        margin-top: 50px;
+    }
+    .biolife-banner__promotion4.v2 .position-1{
+        right: 0;
+    }
+    .wrap-megamenu{
+        background: none;
+    }
+    .mobile-inline.biolife-brand ul li{
+     width: 100%;
+    }
+    .mega-content .row{
+        margin: 0;
+    }
+    .biolife-banner__special .media{
+        width: 60%;
+        padding: 0;
+    }
+    .biolife-banner__special .text-content{
+        width: 40%;
+        padding-top: 20px;
+    }
+    .biolife-banner__special .text-content .first-line {
+        font-size: 28px;
+    }
+    .biolife-banner__special .text-content .second-line {
+        margin-bottom: 14px;
+    }
+    .biolife-banner__special .text-content .third-line,
+    .biolife-banner__special .text-content .second-line {
+        color: #333333;
+        font-size: 25px;
+    }
+    .biolife-banner__special .text-content .third-line i{
+        font-size: 25px;
+    }
+    .biolife-banner__special .product-detail{
+        margin-top: 35px;
+    }
+    .why-choose-us-block .showcase{
+        padding-bottom: 85px;
+        overflow: hidden;
+    }
+    .showcase .sc-left-position,
+    .showcase .sc-right-position{
+        max-width: 50%;
+        position: relative;
+        z-index: 2;
+    }
+    .showcase .sc-center-position{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+    }
+    .sumary-product .action-form .buttons{
+        border-top: 0;
+        padding-top: 0;
+    }
+    .sumary-product .action-form .buttons .pull-row{
+        display: none;
+    }
+    .sumary-product .action-form .total-price-contain{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .sumary-product .action-form .qty-input input,
+    .sumary-product .action-form .qty-input{
+        width: 100%;
+    }
+    .review-tab #comments .comment-content .comment-text{
+        line-height: inherit;
+    }
+    .biolife-panigations-block.version-2{
+        padding-top: 20px;
+    }
+    .product-tabs.single-layout .tab-head .tabs{
+        border-bottom: none;
+    }
+    .product-tabs.single-layout .tab-content .tab-contain{
+        border: 1px solid #e6e6e6;
+        padding: 10px 10px 20px;
+    }
+    .product-tabs.single-layout .tab-content .tab-contain .container{
+        width: 100%;
+        padding: 0;
+    }
+    .product-tabs.single-layout .tab-head .tabs li.active a::before{
+        width: 100%;
+    }
+    .product-tabs.single-layout .tab-head .tabs li a::before{
+        height: 2px;
+    }
+    .product-tabs.single-layout .tab-head .tabs li a{
+        width: 100%;
+        display: inline-block;
+        padding: 8px 0;
+    }
+    .product-tabs.single-layout .tab-head .tabs li:not(:last-child){
+        margin-right: 0;
+        border-bottom: none;
+    }
+    .product-tabs.single-layout .tab-head .tabs li{
+        width: 100%;
+        text-align: center;
+        border: 1px solid #e6e6e6;
+        padding: 3px 0;
+    }
+    .sumary-product .product-attribute{
+        width: 50%;
+        padding-right: 0;
+    }
+    .sumary-product .media{
+        width: 50%;
+    }
+    .sumary-product .action-form{
+        width: 100%;
+        margin-top: 33px;
+        padding-top: 30px;
+    }
+    .sidebar .wgt-content .products li{
+        display: inline-block;
+        width: 100%;
+    }
+    .contain-product .info .product-title,
+    .contain-product.layout-default .info .price ins .price-amount{
+        font-size: 16px;
+    }
+    .contain-product.layout-default .info .product-title{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .contain-product.layout-default .info .product-title a{
+        color: #444444;
+    }
+    .contain-product.layout-default{
+        position: relative;
+        padding-bottom: 30px;
+    }
+    .contain-product.layout-default .slide-down-box .buttons .wishlist-btn{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: block;
+        padding: 4px 0;
+        color: #999999;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.8);
+    }
+    .contain-product.layout-default .slide-down-box .buttons .btn{
+        display: block;
+    }
+    .contain-product.layout-default .slide-down-box .buttons .add-to-cart-btn ,select{
+        padding: 10px 5px;
+        color: #444444;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: capitalize;
+        -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+        background-color: #fafafa !important;
+        width: calc(100% - 4px);
+        margin-left: 2px;
+    }
+    .contain-product.layout-default .slide-down-box .buttons .add-to-cart-btn ,select:visited{
+        background-color: #fafafa;
+    }
+    .contain-product.layout-default .slide-down-box .buttons{
+        padding: 0;
+        display: block;
+    }
+    .contain-product.layout-default .slide-down-box .buttons .compare-btn,
+    .contain-product .info .categories,
+    .contain-product.layout-default .slide-down-box .message,
+    .contain-product.layout-default .shipping-info{
+        display: none;
+    }
+    #sidebar .biolife-mobile-panels{
+        display: block;
+    }
+    #sidebar{
+        position: fixed;
+        top: 0;
+        left: -320px;
+        width: 300px;
+        height: 100vh;
+        background-color: #ffffff;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        z-index: 100000;
+        -webkit-box-shadow: 3px 5px 14px -3px rgba(0,0,0,0.11);
+        -moz-box-shadow: 3px 5px 14px -3px rgba(0,0,0,0.11);
+        box-shadow: 3px 5px 14px -3px rgba(0,0,0,0.11);
+        overflow: hidden;
+        padding: 0;
+    }
+    #sidebar .sidebar-contain{
+        display: inline-block;
+        padding: 30px 15px 0;
+        height: calc( 100% - 50px );
+        overflow-y: auto;
+    }
+    body.open-mobile-filter #sidebar,
+    body.open-mobile-menu .biolife-clone-wrap{
+        left:0;
+    }
+    .mobile-search .open-searchbox{
+        display: block;
+    }
+    .mobile-search-content{
+        display: block;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 350ms ease;
+        -moz-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease;
+    }
+    .mobile-search .mobile-search-content{
+        display: block;
+    }
+    body.open-mobile-search .mobile-search-content{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    body.open-mobile-search .mobile-search-content .nice-select .list{
+        max-height: 200px;
+        overflow-y: scroll;
+        margin: 0;
+        border-radius: 0;
+    }
+    .biolife-cart-info .minicart-contain a>.sub-total,
+    .biolife-cart-info .minicart-contain a>.title{
+        display: none;
+    }
+    .mobile-footer{
+        display: block;
+    }
+    body{
+        margin-bottom: 44px;
+    }
+    .header-top .top-bar{
+        max-width: 100%;
+    }
+    .header-area.layout-02 .header-top .right .horizontal-menu>li.item-link,
+    .header-top .right .horizontal-menu>.currency,
+    .header-top .right .horizontal-menu>.lang,
+    .header-top .top-bar .social-list{
+        display: none;
+    }
+    .header-area.layout-01 .mobile-search .open-searchbox .biolife-icon{
+        color: #333333;
+        font-size: 24px;
+    }
+    .header-area.layout-01 .mobile-search .open-searchbox{
+        line-height: 1;
+        text-align: center;
+        padding: 10px 0 10px 10px;
+        vertical-align: top;
+        background: transparent !important;
+    }
+    .header-area.layout-01 .biolife-cart-info>div{
+        vertical-align: top;
+    }
+}
+
+@media ( max-width: 767px){
+    .grid-twice-item>li+li{
+        margin-top: 80px;
+    }
+    .biolife-banner__special{
+        padding-top: 80px;
+    }
+    .main-content>.posts-list li{
+        margin-bottom: 0;
+    }
+    .main-content>.posts-list li+li{
+        margin-top: 10px;
+    }
+    .hero-section{
+        margin-top: 0;
+    }
+    .main-content .main-post-list{
+        margin-top: 30px;
+    }
+    .main-content .main-post-list li:not(:last-child){
+        margin-bottom: 70px;
+    }
+    .post-item.style-bottom-info .post-content .post-name a{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .blog-page .posts-list:not(.biolife-carousel) .post-item.style-bottom-info .thumbnail img{
+        width: 100%;
+    }
+    .biolife-banner__special .banner-contain{
+        border: 1px solid #eeeeee;
+        text-align: center;
+        padding: 15px 5px 30px
+    }
+    .biolife-banner__special .text-content,
+    .biolife-banner__special .media{
+        width: 100%;
+    }
+    .biolife-banner__special .media img{
+        display: inline-block;
+    }
+    .biolife-banner__special .product-detail{
+        margin-top: 0;
+        text-align: center;
+    }
+    .biolife-banner__special .product-detail .buttons{
+        margin-top: 20px;
+    }
+    .biolife-banner__special .product-detail .add-to-cart-btn{
+        font-weight: 700;
+        min-width: auto;
+        padding: 12px 25px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .biolife-banner__special .text-content .first-line,
+    .biolife-banner__special .text-content .second-line,
+    .biolife-banner__special .text-content .third-line{
+        display: none;
+    }
+    .biolife-banner__special .product-detail .price-contain .price-amount,
+    .biolife-banner__special .product-detail .price-contain ins .price-amount{
+        font-size: 16px;
+    }
+    .slider-opt05 .media{
+        bottom: 50px;
+        top: auto;
+    }
+    .biolife-banner__style-01 .text-content .fourth-line,
+    .biolife-banner__style-01 .text-content .first-line{
+        color: #333333;
+        font-weight: 600;
+    }
+    .biolife-banner__style-15 .text-content,
+    .biolife-banner__style-01 .text-content{
+        right: 10px;
+        left: 10px;
+        padding: 20px 10px;
+        background-color: rgba(255,255,255,0.8);
+        text-align: center;
+        top: 10px;
+        bottom: 10px;
+        width: auto;
+    }
+    .header-area.layout-02 .biolife-logo,
+    .header-area.layout-03 .biolife-logo,
+    .header-area.layout-04 .biolife-logo,
+    .header-area.layout-05 .biolife-logo{
+        display: block;
+        margin-top: 5px;
+    }
+    .header-area .header-middle{
+        padding: 15px 0 !important;
+    }
+    .slider-opt04__layout01 .text-content .third-line{
+        line-height: 24px;
+    }
+    .wrap-custom-menu.horizontal-menu-v2 ul.menu>li+li{
+        border-left: none;
+    }
+    .style-bottom-info.layout-02 .post-meta__item-social-box .inner-content{
+        left: auto;
+        right: 0;
+        margin-left: 0;
+        margin-right: -10px;
+    }
+    .mobile-search-content .form-search>.btn-close{
+        top: -17px;
+        right: -12px;
+    }
+    .main-slide .biolife-carousel.nav-none-on-mobile .slick-arrow.prev,
+    .main-slide .biolife-carousel.nav-none-on-mobile .slick-arrow.next{
+        display: none !important;
+    }
+    .sumary-product .action-form .total-price-contain{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .sumary-product .action-form .location-shipping-to,
+    .sumary-product .action-form .social-media{
+        margin-top: 35px;
+    }
+    .sumary-product .action-form .title{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .order-summary .title-block .title{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .checkout-progress-wrap .checkout-act .title-box{
+        font-size: 19px;
+    }
+    .contact-info-container .addr-info{
+        margin-top: 35px;
+    }
+    .contact-info-container .frst-desc{
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .register-in-container .box-title,
+    .contact-info-container .box-title{
+        font-size: 25px;
+    }
+    .post-item.style-wide .post-content .post-name{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .post-item .group-buttons .btn.readmore{
+        padding: 6px 10px;
+        min-width: 134px;
+    }
+    .search-widget input[type=text]{
+        border-width: 1px;
+    }
+    .single-post-contain .post-content blockquote p{
+        font-size: 15px;
+    }
+    .single-post-contain .post-head .post-archive{
+        font-size: 16px;
+        margin-top: 13px;
+    }
+    .post-comments .wrap-post-comment .cmt-inner{
+        margin-top: 20px;
+    }
+    .post-comments.lever-0>li:first-child>.wrap-post-comment>.cmt-inner{
+        margin-top: 5px;
+    }
+    .post-comments .comment-form .form-row textarea{
+        padding: 55px 10px 10px 15px;
+        height: 220px;
+    }
+    .post-comments .comment-form .form-row .current-author{
+        top: 10px;
+        left: 10px;
+    }
+    .single-post-contain .post-foot .auth-info .avata{
+        margin-right: 5px;
+    }
+    .single-post-contain .post-content blockquote{
+        padding: 10px;
+    }
+    .single-post-contain .post-head .post-name{
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 24px;
+    }
+    .contain-product__deal-layout .info .price{
+        margin-top: 12px;
+    }
+    .contain-product__deal-layout .slide-down-box .buttons .btn:not(.add-to-cart-btn){
+        display: none;
+    }
+    .contain-product .info .product-title{
+        margin-top: 13px;
+    }
+    .biolife-countdown .number{
+        font-size: 17px;
+    }
+    .contain-product__deal-layout{
+        padding: 10px 10px 30px;
+        text-align: center;
+    }
+    .contain-product__deal-layout img{
+        display: inline-block;
+    }
+    .biolife-banner__style-01 .text-content .third-line, 
+    .biolife-banner__style-01 .text-content .second-line{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .tab-head__icon-top-layout:not(.background-tab-include) a::after{
+        content: none;
+    }
+    .instagram-ltl-item,
+    .instagram-ltl-item .link-to img,
+    .instagram-ltl-item .link-to{
+        width: 100%;
+    }
+    .contain-product__right-info-layout3{
+        display: block;
+    }
+    .contain-product__right-info-layout3 .buttons .add-to-cart-btn{
+        width: 100%;
+        border-radius: 0;
+        padding: 13px;
+        min-width: auto;
+    }
+    .contain-product__right-info-layout3 .buttons .btn:not(.add-to-cart-btn){
+        display: none;
+    }
+    .products-list.vertical-layout-02 li{
+        padding: 0 0 20px;
+    }
+    .biolife-banner__grid.type-02 .banner-contain .cat-name{
+        max-width: 250px;
+    }
+    .biolife-banner__grid .media-contain.media-06,
+    .biolife-banner__grid .media-contain.media-01,
+    .biolife-banner__grid .media-contain{
+        height: 300px;
+    }
+    .biolife-banner__grid .banner-contain .cat-name{
+        font-size: 22px;
+    }
+    .sumary-product .action-form .total-price-contain .price{
+        font-size: 21px;
+    }
+    .sumary-product .product-attribute .title{
+        font-weight: 700;
+    }
+    .hero-section .page-title{
+        font-size: 28px;
+    }
+    .biolife-banner__style-12 .text2{
+        padding: 0;
+        font-size: 22px;
+    }
+    .biolife-carousel.row-space-29px .row-item+.row-item{
+        margin-top: 20px;
+    }
+    .slider-opt05 .text-content .second-line{
+        font-size: 32px;
+        line-height: 43px;
+    }
+    .advance-product-box_countdown{
+        border: none;
+    }
+    .advance-product-box_countdown .contain-product .info .product-title{
+        margin-top: 20px;
+    }
+    .biolife-title-box_in-countdown{
+        padding: 0;
+    }
+    .biolife-title-box_in-countdown .title{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .advance-product-box_countdown .biolife-carousel{
+        border: 1px solid #e6e6e6;
+        padding-top: 10px;
+    }
+    .biolife-title-box.style-02 .desc,
+    .biolife-title-box.style-02 .subtitle,
+    .biolife-title-box.slim-item .subtitle{
+        display: none;
+    }
+    .contain-product.scale-effect{
+        padding-bottom: 20px;
+    }
+    .contain-product.layout-default .slide-down-box .buttons .wishlist-btn{
+        display: none;
+    }
+    .contain-product.layout-default .slide-down-box .buttons{
+        text-align: center;
+    }
+    .tab-head__sample-layout.type-02 .tab-element .tab-link:hover,
+    .tab-head__sample-layout.type-02 .active .tab-link{
+        background: #fafafa;
+    }
+    .biolife-banner__special-03 .banner-contain{
+        padding-bottom: 0;
+    }
+    .biolife-title-box__bgrd-bold{
+        margin-top: 70px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .biolife-title-box__bgrd-bold .title{
+        font-size: 24px;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 30px 17px;
+        background-size: 100%;
+        min-width: 210px;
+    }
+    .contain-product__right-info-layout3 .product-thumb img{
+        display: block;
+        width: 100%;
+    }
+    .contain-product__right-info-layout3 .product-thumb{
+        width: 100% !important;
+    }
+    .contain-product__right-info-layout3 .info .price ins .price-amount{
+        font-size: 18px;
+    }
+    .contain-product__right-info-layout3 .info .rating .star-rating{
+        margin-top: 0;
+    }
+    .contain-product__right-info-layout3 .info .rating{
+        display: none;
+    }
+    .contain-product__right-info-layout3 .info .price{
+        display: block;
+        text-align: left;
+        float: none;
+        max-width: 100%;
+    }
+    .contain-product__right-info-layout3 .info .product-title{
+        display: block;
+        max-width: initial;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .contain-product__right-info-layout3 .info{
+        padding: 0;
+    }
+    .contain-product__right-info-layout3 .info .desc{
+        display: none;
+    }
+    .contain-product__right-info-layout3 .info,
+    .contain-product__right-info-layout3 .product-thumb{
+        display: block;
+    }
+    .biolife-banner__promotion6 .media .img-moving.position-1{
+        position: static;
+    }
+    .biolife-banner__promotion6 .banner-contain .media{
+        height: auto;
+        padding-top: 10px;
+    }
+    .biolife-banner__promotion6 .text-content .text2{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .biolife-banner__promotion6 .banner-contain .text-content{
+        top: 50%;
+        left: 50%;
+        right: auto;
+        max-width: 290px;
+        margin-left: -145px;
+        padding: 25px 10px 35px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .biolife-banner__special-02 .text-content .text04 i,
+    .biolife-banner__special-02 .text-content .text04,
+    .biolife-banner__special-02 .text-content .text03{
+        font-size: 22px;
+    }
+    .biolife-banner__special-02 .product-detail .price-contain .price-amount,
+    .biolife-banner__special-02 .text-content .text02{
+        font-size: 24px;
+    }
+    .biolife-banner__special-02 .text-content .text01{
+        font-size: 32px;
+        margin-bottom: 5px;
+        color: #888;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .biolife-banner__special-02 .text-content .text03{
+        margin: 17px 0 10px;
+        color: #444444;
+    }
+    .biolife-banner__special-02 .text-content .text04{
+        color: #444444;
+    }
+    .biolife-newsletter-popup-contain .modal-dialog{
+        width: 290px;
+        margin: 100px auto;
+    }
+    .newsletter-block_popup-layout{
+        padding: 40px 15px 40px;
+    }
+    .newsletter-block_popup-layout .wrap-title .newslt-title{
+        font-size: 32px;
+        margin-top: 12px;
+    }
+    .newsletter-block_popup-layout .form-content .input-text{
+        padding: 8px;
+    }
+    .newsletter-block_popup-layout .form-content .bnt-submit{
+        padding: 11px;
+        margin-top: 25px;
+    }
+    .newsletter-block_popup-layout .form-content .dismiss-newsletter{
+        margin-top: 35px;
+    }
+    .header-area.layout-01{
+        position: static;
+    }
+    .header-area.layout-01 .header-bottom:not(.pre-sticky){
+        padding: 15px 0;
+    }
+    .minicart-block.layout-02 .icon-contain .btn-to-cart{
+        padding: 12px 10px;
+    }
+    .minicart-block.layout-02 .icon-contain .biolife-icon{
+        line-height: 35px;
+    }
+    .newsletter-block.layout-04 .wrap-title .biolife-icon{
+        display: none;
+    }
+    .newsletter-block.layout-04 .wrap-title .texts{
+        padding: 0;
+        text-align: center;
+    }
+    .newsletter-block.layout-04 .wrap-title .sub-title{
+        margin: 15px 0 0;
+    }
+    .newsletter-block.layout-04 .wrap-title{
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    .biolife-brand-block .link-brand-item{
+        display: block;
+        text-align: center;
+    }
+    .biolife-brand-block .link-brand-item img{
+        display: inline-block;
+    }
+    .newsletter-block.layout-03{
+        padding-top: 90px;
+        background-position: center left;
+    }
+    .newsletter-block.layout-03 .form-content .newslt-title{
+        font-size: 22px;
+    }
+    .newsletter-block.layout-03 .form-content .sub-title{
+        margin: 20px 0 0;
+    }
+    .biolife-title-box__under-line{
+        margin-bottom: 30px;
+        border-bottom: 0;
+        padding-bottom: 10px;
+    }
+    .biolife-banner__detail-product .head-info .text2{
+        margin-top: 5px;
+    }
+    .biolife-banner__detail-product .head-info h3 i{
+        font-size: 26px;
+    }
+    .biolife-banner__detail-product .head-info h3{
+        font-size: 22px;
+    }
+    .hidden-icon-on-mobile.biolife-title-box .biolife-icon{
+        display: none;
+    }
+    .footer.layout-02 .footer-content{
+        padding-top: 50px;
+    }
+    .products-list__vertical-layout li:last-child{
+        padding-bottom: 0;
+    }
+    .products-category-box .title{
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+    .products-category-box{
+        padding: 0;
+    }
+    .biolife-stretch-the-right-background>.bg_underground{
+        display: none;
+    }
+    .payment-methods.layout-02 .payments li{
+        margin-bottom: 10px;
+    }
+    .payment-methods.layout-02 .payments li:not(:last-child){
+        margin-right: 10px;
+    }
+    .biolife-social.bigger-on-mobile ul li+li{
+        margin-left: 40px;
+    }
+    .biolife-social.bigger-on-mobile ul li a{
+        font-size: 22px;
+    }
+    .newsletter-block.layout-02{
+        padding-top: 10px;
+    }
+    .biolife-banner__promotion4.v2 .container{
+        position: initial;
+    }
+    .biolife-banner__promotion4.v2 .position-2{
+        margin: 0;
+        max-width: 107px;
+    }
+    .biolife-banner__promotion4.v2 .position-1{
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .biolife-title-box.link-all .main-title{
+        font-size: 22px;
+    }
+    .post-item.style-bottom-info.layout-02 .thumbnail a>img{
+        width: 100%;
+    }
+    .biolife-banner__promotion4 .position-1{
+        left: 0;
+    }
+    .biolife-banner__promotion4 .text-content .first-line{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .biolife-banner__promotion4 .position-2 img{
+        -webkit-animation: unset;
+        animation: unset;
+    }
+    .biolife-banner__promotion4 .banner-contain{
+        position: initial;
+    }
+    .biolife-banner__promotion4{
+        position: relative;
+        overflow: hidden;
+    }
+    .biolife-banner__promotion4 .text-content{
+        padding: 23px 0;
+        top: 50%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: none;
+    }
+    .biolife-banner__promotion4.v2 .text-content{
+        background: none;
+    }
+    .biolife-banner__promotion4.v2::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 7;
+    }
+    .biolife-title-box.style-02 .main-title{
+        font-size: 24px;
+    }
+    .slider-opt03__layout02 .text-content{
+        margin: 0 0 0 -200px;
+        left: 50%;
+        padding: 15px 15px 25px;
+    }
+    .contain-product__right-info-layout .info .rating .review-count{
+        display: none;
+    }
+    .contain-product__right-info-layout .product-thumb{
+        width: 40%;
+    }
+    .contain-product__deal-layout .biolife-countdown>span{
+        min-width: 50px;
+        padding: 6px;
+    }
+    .contain-product__deal-layout .biolife-countdown .text{
+        font-size: 11px;
+        font-weight: 700;
+    }
+    .biolife-title-box__bold-style.mobile-tiny .title,
+    .biolife-title-box__bold-style .title{
+        font-size: 24px;
+    }
+    .biolife-title-box__bold-style{
+        margin-top: 80px;
+        padding-right: 0;
+    }
+    .biolife-banner__promotion2 .text-content{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        margin-top: -150px;
+    }
+    .biolife-banner__promotion2 .media{
+        position: static;
+        width: 100%;
+        margin-top: -91px;
+    }
+    .biolife-tab .tab-content{
+        clear: both;
+    }
+    .biolife-tab .tab-head:not(.tab-head__default) .tabs{
+        display: inline-block;
+        margin: 26px 0 30px !important;
+        width: 100%;
+    }
+    .tab-head__icon-top-layout a::after{
+        content: none;
+    }
+    .tab-head__icon-top-layout a{
+        font-size: 16px;
+        vertical-align: middle;
+        background-color: #f6f6f6;
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        padding: 7px 5px;
+    }
+    .tab-head__icon-top-layout .biolife-icon.icon-blueberry{
+        margin-left: 7px;
+    }
+    .tab-head__icon-top-layout .biolife-icon{
+        display: inline-block;
+        font-size: 28px;
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+    }
+    .biolife-tab .tab-head:not(.tab-head__default):not(.tab-head__sample-layout) .tab-element.active .tab-link{
+        background-color: #888;
+        color: #f6f6f6;
+    }
+    .biolife-tab .tab-head:not(.tab-head__default):not(.tab-head__sample-layout) .tabs .tab-element{
+        width: 50%;
+        text-align: left;
+        float: left;
+        padding: 0 1px;
+        margin-bottom: 1px;
+    }
+    .biolife-tab .tab-head:not(.tab-head__default):not(.tab-head__sample-layout) .tabs .tab-element + .tab-element{
+        margin-left: 0;
+    }
+    .biolife-tab .tab-head__sample-layout .tabs .tab-element{
+        width: 100%;
+        border-left: 3px solid #fafafa;
+        background: #fafafa;
+        margin-bottom: 1px;
+    }
+    .tab-head__sample-layout .tabs .tab-element.active{
+        border-left-color: #444444;
+    }
+    .tab-head__sample-layout .tab-element .tab-link{
+        color: #aaaaaa;
+        padding: 11px;
+        background: #fafafa;
+        font-size: 15px;
+    }
+    .tab-head__sample-layout .tab-element .tab-link:hover,
+    .tab-head__sample-layout .active .tab-link{
+        color: #444444;
+        background: #efefef;
+    }
+    .services-list{
+        border: none;
+    }
+    .services-list li{
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .biolife-service__type02 .services-list li{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    .slider-opt03__layout01 .text-content{
+        right: 50%;
+        margin: 0 -270px 0 0;
+        min-width: 540px;
+    }
+    .slider-opt03__layout01.mode-02 .text-content{
+        margin-top: 10px;
+    }
+    .slider-opt03__layout01.mode-03 .media,
+    .slider-opt03__layout01.mode-02 .media,
+    .slider-opt03__layout01 .media{
+        height: 480px;
+    }
+    .slider-opt03__layout01 .media .child-elememt{
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 0;
+    }
+    .slider-opt03__layout01 .media .child-elememt>*{
+        height: 440px;
+        display: inline-block;
+        margin-top: 40px;
+    }
+    .slider-opt03__layout01 .media .child-elememt img{
+        width: initial;
+        height: 100%;
+        max-width: initial;
+    }
+    .slick-slide.slick-active .slider-opt03__layout01 .media .child-elememt,
+    .slick-slide .slider-opt03__layout01 .media .child-elememt{
+        left: 50%;
+        right: auto;
+        -webkit-transform: scale(1) translateX(-50%);
+        -moz-transform: scale(1) translateX(-50%);
+        -ms-transform: scale(1) translateX(-50%);
+        -o-transform: scale(1) translateX(-50%);
+        transform: scale(1) translateX(-50%);
+    }
+    .post-item.style-left-info .thumbnail img,
+    .post-item.style-left-info .thumbnail{
+        width: 100%;
+    }
+    .post-item.style-left-info .thumbnail,
+    .post-item.style-left-info .post-content,
+    .post-item.style-left-info{
+        display: block;
+        text-align: center;
+        padding-left: 0;
+    }
+    .post-item.style-left-info .post-content>*{
+        max-width: 100%;
+    }
+    .post-item .post-content .post-archive{
+        font-size: 16px;
+    }
+    .post-item.style-left-info .post-content{
+        padding-top: 15px;
+    }
+    .post-item.style-left-info .post-content .post-name{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .contact-info-block.footer-layout ul li{
+        margin-bottom: 15px;
+    }
+    .post-comments .wrap-post-comment .cmt-fooot .btn{
+        color: #888888;
+    }
+    .post-comments .wrap-post-comment .cmt-content p{
+        color: #444444;
+    }
+    .post-comments .comment-list ol.lever-1{
+        padding-left: 25px;
+    }
+    .post-comments .comment-list ol{
+        background: #fcfcfc;
+        padding: 10px;
+    }
+    .post-comments .form-row.last-btns .btn-sumit{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .post-comments .cmt-title{
+        font-size: 25px;
+    }
+    .single-post-contain .post-head{
+        margin-bottom: 30px;
+    }
+    .single-post-contain .post-foot .post-tags .tags li{
+        margin-bottom: 10px;
+    }
+    .single-post-contain .post-foot .post-tags .tag-title{
+        display: none;
+    }
+    .testimonial-block .testml-elem .desc{
+        text-align: justify;
+    }
+    .testimonial-block .testimonial-list{
+        padding: 0 0 55px;
+    }
+    .testimonial-block .box-title{
+        margin: 50px 0 40px;
+    }
+    .why-choose-us-block .showcase{
+        padding-bottom: 50px;
+    }
+    .welcome-us-block{
+        height: auto;
+        background: none;
+        padding-bottom: 20px;
+    }
+    .why-choose-us-block .subtitle{
+        margin: 29px 0 0;
+    }
+    .welcome-us-block .text-wraper{
+        margin: 43px 0 0;
+        padding: 0 0 40px;
+        background: none;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .welcome-us-block .qt-text,
+    .welcome-us-block .text-info{
+        float: none;
+    }
+    .testimonial-block .box-title::after,
+    .testimonial-block .box-title::before{
+        display: none;
+    }
+    .why-choose-us-block .box-title,
+    .testimonial-block .box-title,
+    .welcome-us-block .title{
+        font-size: 28px;
+    }
+    .showcase .sc-center-position{
+        display: none;
+    }
+    .showcase .sc-right-position{
+        padding-top: 42px;
+        direction: ltr;
+    }
+    .sc-left-position,
+    .sc-right-position{
+        padding-top: 30px;
+    }
+    .showcase .sc-left-position,
+    .showcase .sc-right-position{
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+    }
+    .why-choose-us-block .sc-element .txt-content{
+        width: 100%;
+    }
+    .why-choose-us-block .sc-element .txt-content .number{
+        font-size: 37px;
+    }
+    .why-choose-us-block .sc-element .txt-content .desc{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .register-in-container{
+        margin-top: 50px;
+    }
+    .signin-container .form-row.wrap-btn{
+        text-align: center;
+    }
+    .signin-container .form-row .link-to-help{
+        float: none;
+        margin: 24px 0 0;
+    }
+    .signin-container .form-row .btn-submit{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .signin-container{
+        margin-top: 20px;
+    }
+    .top-banner ul{
+        width: 100%;
+    }
+    .top-banner ul li{
+        padding: 0 15px;
+    }
+    .top-banner{
+        padding: 57px 10px 35px;
+    }
+    .shopping-cart-container th{
+        display: none;
+    }
+    .shopping-cart-container table.cart-form tbody,
+    .shopping-cart-container table.cart-form tr,
+    .shopping-cart-container table.cart-form td,
+    .shopping-cart-container table.cart-form{
+        display: block;
+        padding: 0;
+    }
+    .shopping-cart-container table.cart-form tr{
+        margin-bottom: 30px;
+        border: 1px solid #e6e6e6;
+    }
+    .shopping-cart-container table.cart-form td{
+        padding: 15px 5px;
+    }
+    .shopping-cart-container table.cart-form td + td{
+        border-top: 1px solid #e6e6e6;
+    }
+    .shopping-cart-container table.cart-form td.product-thumbnail{
+        text-align: center;
+        padding-top: 26px;
+    }
+    .shopping-cart-container table.cart-form td.product-thumbnail .prd-name{
+        padding: 0;
+        width: 100%;
+        margin-top: 16px;
+    }
+    .shopping-cart-container table.cart-form td.product-thumbnail .action{
+        padding: 5px;
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: auto;
+    }
+    .shopping-cart-container table.cart-form td.product-thumbnail .action a{
+        padding: 3px 5px;
+        margin-left: 10px;
+    }
+    .shopping-cart-container table.cart-form tr.wrap-buttons{
+        border: none;
+    }
+    .shopping-cart-container table.cart-form td.wrap-btn-control{
+        padding: 0;
+    }
+    .shopping-cart-container table.cart-form td.wrap-btn-control button.btn{
+        width: calc( 50% - 5px);
+        min-width: auto;
+        float: left;
+    }
+    .shopping-cart-container table.cart-form td.wrap-btn-control .btn-clear{
+        margin-left: 10px;
+    }
+    .shopping-cart-container table.cart-form td.wrap-btn-control a.back-to-shop{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .single-layout.product-tabs{
+        margin-top: 45px;
+    }
+    .review-tab #comments .comment-content .comment-in .post-date{
+        display: none;
+    }
+    .review-tab #comments .comment-review-form{
+        margin-top: 25px;
+    }
+    .review-tab #comments .comment-review-form .actions{
+        display: table;
+        width: 100%;
+        margin-top: 0;
+    }
+    .review-tab #comments .comment-review-form .actions li{
+        display: table-cell;
+        width: 33.33333%;
+    }
+    .product-tabs.single-layout .tab-content .row{
+        margin: 0;
+    }
+    .product-tabs.single-layout .tab-content .col-xs-12{
+        padding: 0;
+    }
+    .product-category .products-list{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .product-category .products-list .product-item{
+        padding: 0 7px;
+    }
+    .footer-phone-info .r-info{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    .newsletter-block .title{
+        font-size: 17px;
+    }
+    .payment-methods.layout-02 .title{
+        font-size: 19px;
+        font-weight: 700;
+        margin: 0 0 30px;
+    }
+    .footer-item .section-title{
+        font-size: 19px;
+    }
+    .biolife-cart-info .minicart-block .cart-content{
+        width: auto;
+        right: -52px;
+    }
+    .biolife-cart-info .minicart-block .cart-inner{
+        width: 290px;
+        padding-left: 10px;
+    }
+    .biolife-cart-info .minicart-item .thumb{
+        width: 80px;
+    }
+    .biolife-cart-info .minicart-item .left-info{
+        width: calc(100% - 80px);
+        padding-right: 12px;
+    }
+    .biolife-cart-info .minicart-block ul.products li:first-child .minicart-item .action{
+        margin-top: -32px;
+    }
+    .minicart-item .action{
+        top: 50%;
+    }
+    .minicart-item .action a{
+        float: left;
+        clear: left;
+        width: 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .minicart-item .action a+a{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .biolife-cart-info .minicart-block .btn-control .btn{
+        width: calc( 50% - 5px );
+        padding: 12px;
+        font-size: 12px;
+        border-radius: 0;
+    }
+    .biolife-cart-info .minicart-block .btn-control .view-cart{
+        margin-right: 10px;
+    }
+    .minicart-item .left-info .product-title{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .payment-methods ul,
+    .copy-right-text{
+        text-align: center;
+    }
+    .payment-methods ul li+li{
+        margin-left: 5px;
+    }
+    .biolife-cart-info>div+div{
+        margin-left: 22px;
+    }
+    .mobile-search .mobile-search-content{
+        padding: 20px 15px;
+        margin-left: -145px;
+        width: 290px;
+        margin-top: -101px;
+        top: 50%;
+    }
+    .mobile-search .mobile-search-content .nice-select{
+        width: 100%;
+        border-top: none;
+        border-left: 0;
+        border-right: 0;
+    }
+    .mobile-search .mobile-search-content .input-text{
+        width: 100%;
+        margin-bottom: 15px;
+        border-top: none;
+        border-left: 0;
+        border-right: 0;
+    }
+    .mobile-search .mobile-search-content .btn-submit{
+        margin-top: 15px;
+        width: 100%;
+        position: static;
+    }
+}
+
+@media ( max-width: 600px){
+    .content-404{
+        margin: 0 auto;
+        padding: 50px 15px 80px;
+    }
+    .content-404 .heading{
+        font-size: 60px;
+    }
+    .content-404 .title{
+        font-size: 28px;
+    }
+    .content-404 p{
+        margin-bottom: 35px;
+        font-size: 15px;
+    }
+    .slider-opt05 .text-content .first-line{
+        color: #333333;
+    }
+    .slider-opt05 .text-content .third-line{
+        color: #000000;
+        font-weight: 600;
+    }
+    .slider-opt03__layout01 .text-content{
+        right: 10px;
+        left: 10px;
+        margin: 0;
+        text-align: center;
+        padding: 20px 10px;
+        min-width: auto;
+    }
+    .slider-opt03__layout01.mode-02 .text-content{
+        margin-top: 45px;
+    }
+    .slider-opt03__layout01 .text-content .first-line{
+        text-align: center;
+        font-size: 28px;
+    }
+    .slider-opt03__layout01 .text-content .second-line{
+        text-align: center;
+        display: inline-block;
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 280px;
+        margin-top: 10px;
+    }
+    .slider-opt03__layout01 .text-content .third-line{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .slider-opt03__layout01 .buttons .btn{
+        padding: 14px 10px;
+        min-width: 120px;
+    }
+    .slider-opt03__layout01 .buttons .btn+.btn{
+        padding: 12px 10px;
+        min-width: 120px;
+        margin-left: 15px;
+    }
+    .single-post-contain .post-head .post-archive .author{
+        display: block;
+        margin-left: 0;
+    }
+    .biolife-banner__style-15 .text-content .second-line{
+        font-size: 28px;
+    }
+    .biolife-banner__style-15 .text-content .third-line{
+        font-size: 28px;
+        margin-top: 8px;
+    }
+    .biolife-banner__style-15 .text-content .fourth-line,
+    .biolife-banner__style-15 .text-content .first-line{
+        color: #444444;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .biolife-banner__promotion5 .banner-contain .media{
+        height: 400px;
+    }
+    .biolife-banner__promotion5 .text-content .text1{
+        font-size: 25px;
+    }
+    .biolife-banner__promotion5 .text-content .text2{
+        font-size: 30px;
+        line-height: 36px;
+        margin: 10px 0 0;
+    }
+    .biolife-banner__style-11 .text4 span{
+        font-size: 32px;
+    }
+    .biolife-banner__style-11 .text4{
+        font-size: 23px;
+    }
+    .biolife-banner__style-11 .text3,
+    .biolife-banner__style-11 .text1{
+        font-size: 17px;
+    }
+    .biolife-banner__style-11 .text2{
+        font-size: 26px;
+    }
+    .biolife-banner__style-11 .banner-contain .text-content::before,
+    .biolife-banner__style-12 .banner-contain .text-content::before{
+        top: -18px;
+        margin: 0;
+        left: 50%;
+        margin-left: -16px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .biolife-banner__style-12 .banner-contain,
+    .biolife-banner__style-11 .banner-contain{
+        display: inline-block;
+    }
+    .biolife-banner__style-12 .banner-contain .media,
+    .biolife-banner__style-12 .banner-contain .text-content,
+    .biolife-banner__style-11 .banner-contain .media,
+    .biolife-banner__style-11 .banner-contain .text-content{
+        display: block;
+        width: 100%;
+    }
+    .biolife-banner__style-12 .banner-contain .text-content,
+    .biolife-banner__style-11 .banner-contain .text-content{
+        padding: 20px 15px 30px;
+        margin-top: 10px;
+    }
+    .biolife-banner__style-12 .banner-contain .media,
+    .biolife-banner__style-11 .banner-contain .media{
+        padding-right: 0;
+    }
+    .biolife-banner__style-12 .banner-contain .media img,
+    .biolife-banner__style-11 .banner-contain .media img{
+        display: inline-block;
+        width: 100%;
+    }
+    .slider-opt03__layout02 .media{
+        height: 400px;
+    }
+    .main-slide.nav-change2 .slick-arrow,
+    .main-slide.nav-change .slick-arrow{
+        display: none !important;
+    }
+    .slider-opt03__layout02 .text-content{
+        width: 290px;
+        margin-left: -145px;
+        top: 51px;
+    }
+    .slider-opt03__layout02.type_02 .text-content{
+        margin-left: 0;
+        top: 70px;
+    }
+    .slider-opt03__layout02 .buttons .btn{
+        padding: 9px 15px;
+        min-width: 100px;
+    }
+    .slider-opt03__layout02 .buttons .btn-thin{
+        padding: 7px 15px;
+    }
+    .slider-opt03__layout02 .text-content .third-line{
+        margin: 22px 0 0;
+        line-height: 24px;
+        color: #000000;
+    }
+    .slider-opt03__layout02 .text-content .second-line{
+        line-height: 1;
+        margin-top: 15px;
+        font-size: 32px;
+    }
+    .biolife-banner__promotion3 .text-content .second-line{
+        font-size: 28px;
+        max-width: 100%;
+    }
+    .biolife-banner__promotion3 .product-detail .txt-price{
+        font-size: 23px;
+    }
+    .biolife-banner__promotion3 .product-detail .add-to-cart-btn{
+        padding: 9px 10px;
+        min-width: 135px;
+    }
+    .biolife-banner__promotion3 .text-content{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .biolife-banner__promotion3 .text-wrap{
+        background-color: rgba(255,255,255,0.8);
+        box-shadow: 0 0 7px 0 rgba(130,130,130,0.2);
+        border-radius: 2px;
+        margin: 0;
+        padding: 15px;
+        display: inline-block;
+        text-align: left;
+    }
+    .style-bottom-info.layout-02 .post-content .post-name{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .biolife-banner__promotion2{
+        overflow: hidden;
+        margin-top: 75px;
+    }
+    .biolife-banner__promotion2 .banner-contain{
+        text-align: center;
+    }
+    .biolife-banner__promotion2 .media{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        padding: 20px 15px 30px;
+        background-position: center top;
+        margin-top: 0;
+        border-top: 1px solid #eeeeee;
+    }
+    .biolife-banner__promotion2 .text-content{
+        margin: 70px 0;
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        float: initial;
+        text-align: left;
+    }
+    .biolife-banner__promotion2 .text-content .btn-thin{
+        padding: 8px 15px !important;
+        margin-left: 5px;
+    }
+    .biolife-banner__promotion2 .text-content .btn{
+        padding: 10px 22px;
+        font-size: 13px;
+        min-width: auto;
+    }
+    .biolife-banner__promotion2 .text-content .second-line,
+    .biolife-banner__promotion2 .text-content .first-line{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .biolife-banner__promotion2 .text-content .second-line i{
+        font-size: 22px;
+    }
+    .biolife-banner__promotion2.advance .text-content .second-line i{
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: unset;
+    }
+    .biolife-banner__promotion3{
+        border-bottom: none;
+    }
+    .biolife-banner__promotion .product-detail .add-to-cart-btn{
+        padding: 10px 30px;
+        min-width: auto;
+        margin-top: 35px;
+    }
+    .biolife-banner__promotion{
+        height: auto;
+        background-size: auto;
+        background-position: center bottom;
+    }
+    .biolife-banner__promotion .text-content{
+        position: static;
+        padding: 50px 15px;
+    }
+    .biolife-banner__promotion .text-content .first-line{
+        font-size: 25px;
+    }
+    .biolife-banner__promotion .text-content .second-line{
+        font-size: 25px;
+        line-height: 1;
+    }
+    .biolife-banner__promotion .product-detail .txt-price{
+        font-size: 23px;
+        margin: 0;
+        display: block;
+    }
+    .biolife-banner__promotion .text-content .text-wrap{
+        padding-left: 15px;
+    }
+    .biolife-service__type01 .txt-show-01{
+        font-size: 50px;
+        line-height: 100px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .biolife-service__type01 .txt-show-02{
+        font-size: 30px;
+    }
+    .biolife-carousel.dots_ring_style .slick-dots{
+        display: none !important;
+    }
+    .single-post-contain .post-foot .auth-info{
+        padding: 25px 0 0;
+        border-bottom: 0;
+    }
+    .single-post-contain .post-foot .socials-connection{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .single-post-contain .post-foot .socials-connection .social-list{
+        width: 100%;
+        margin: 0;
+    }
+    .single-post-contain .post-foot .socials-connection .title{
+        display: none;
+    }
+    .order-summary .cart-list .cart-item .info,
+    .order-summary .cart-list .cart-item .price,
+    .order-summary .cart-list .cart-item .product-thumb{
+        display: inline-block;
+    }
+    .order-summary .cart-list .cart-item .info,
+    .order-summary .cart-list .cart-item .price{
+        width: calc( 100% - 113px );
+        display: inline-block;
+        float: right;
+        padding-top: 5px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    .order-summary .cart-list .cart-item .product-thumb{
+        float: left;
+    }
+    .order-summary .cart-list .cart-item .info *{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .checkout-progress-wrap .checkout-act .box-content{
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    .top-banner ul li .cost{
+        margin-left: 15px;
+    }
+    .top-banner .btns .btn{
+        width: 100%;
+    }
+    .top-banner .btns .btn + .btn{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .biolife-instagram-block .wrap-title .title,
+    .biolife-title-box .main-title{
+        font-size: 24px;
+    }
+    .product-tabs .review-form-wrapper{
+        padding-top: 40px;
+    }
+    .accodition-tab>ul>li>.content{
+        padding: 10px 0 15px;
+    }
+    .product-tabs .tab-content p,
+    .accodition-tab>ul>li>.title{
+        font-size: 14px;
+    }
+    .review-form-wrapper .form-row button[type=submit],
+    .review-form-wrapper .wide-half{
+        width: 100%;
+    }
+    .review-form-wrapper .wide-half:nth-last-child(odd){
+        margin-left: 0;
+    }
+    .biolife-panigations-block.version-2{
+        text-align: center;
+    }
+    .biolife-panigations-block.version-2 ul li a.next{
+        margin-left: 0;
+    }
+    .biolife-panigations-block.version-2 .result-count{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .sumary-product .product-attribute .rating{
+        margin-top: 0;
+        padding-top: 8px;
+    }
+    .rating .star-rating{
+        margin-top: 10px;
+    }
+    .sumary-product .product-attribute .review-count{
+        margin-right: 17px;
+        margin-top: 10px;
+    }
+    .sumary-product .product-attribute .qa-text,
+    .sumary-product .product-attribute .category{
+        margin-left: 0;
+        margin-right: 17px;
+        margin-top: 10px;
+    }
+    .sumary-product .product-attribute .product-atts .atts-item,
+    .sumary-product .product-attribute .title,
+    .sumary-product .product-attribute .excerpt{
+        max-width: 100%;
+    }
+    .sumary-product .product-attribute{
+        width: 100%;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .sumary-product .product-attribute .product-atts,
+    .sumary-product .media{
+        width: 100%;
+    }
+    .sumary-product .action-form{
+        width: 100%;
+        margin-top: 33px;
+    }
+    .contain-product__right-info-layout2 .info .star-rating{
+        margin-top: 0;
+    }
+    .product-category .products-list .product-item:not(:last-child) .pr-detail-layout{
+        border-bottom: 1px solid #666;
+        margin-bottom: 40px;
+    }
+    .pr-detail-layout .info .buttons .btn:not(.add-to-cart-btn){
+        display: none;
+    }
+    .pr-detail-layout .product-thumb{
+        width: 100%;
+    }
+    .pr-detail-layout .info{
+        width: 100%;
+        padding: 0;
+    }
+    .pr-detail-layout .info .categories{
+        margin-top: 24px;
+        width: 100%;
+        font-size: 16px;
+        color: #7faf51;
+        font-weight: 700;
+    }
+    .pr-detail-layout .info .product-title{
+        font-size: 20px;
+        line-height: 24px;
+        width: 100%;
+        margin: 13px 0 0;
+    }
+    .pr-detail-layout .info .excerpt{
+        margin: 20px 0 0;
+        width: 100%;
+    }
+    .pr-detail-layout .info .buttons{
+        margin-bottom: 23px;
+    }
+    .pr-detail-layout .info .buttons .add-to-cart-btn{
+        min-width: 100%;
+        padding: 13px;
+    }
+    .pr-detail-layout .advance-info{
+        width: 100%;
+        margin: 0;
+        border: 1px dashed #aaa;
+        padding: 13px;
+        background: #f9f9f9;
+    }
+    .top-functions-area .flt-item.group-on-mobile .wrap-selectors{
+        width: 290px;
+        margin-left: -145px;
+        padding: 15px;
+    }
+    .top-functions-area{
+        display: inline-block;
+        margin-top: 35px;
+        background-color: #fafafa;
+        border: 1px solid #efefef;
+        padding: 9px 8px 1px;
+        padding-bottom: 15px;
+        padding-top: 24px;
+    }
+    .top-functions-area .viewmode-selector .viewmode{
+        margin-left: 5px;
+    }
+    .top-functions-area .flt-item .flt-title{
+        display: none;
+    }
+    .top-functions-area .flt-item.to-right .nice-select.orderby{
+        border-radius: 0;
+        border: 1px solid #e6e6e6;
+        padding-left: 10px;
+    }
+    .top-functions-area .flt-item.to-right .nice-select.orderby .current{
+        padding: 5px 0 7px;
+        width: 118px;
+    }
+}
+
+@media ( max-width: 479px){
+    .biolife-banner__style-08 .text1,
+    .biolife-banner__style-09 .text1,
+    .biolife-banner__style-09 .text3{
+        color: #000000;
+    }
+    .payment-methods.layout-02 .payments{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .payment-methods.layout-02 .payments li:not(:last-child){
+        margin-right: 0;
+    }
+    .post-item .post-content .post-archive .author{
+        margin-left: 0;
+        display: block;
+    }
+    .add-border-on-mobile{
+        border: 1px solid #e6e6e6;
+    }
+    .biolife-tab .tab-head.tab-head__default .tabs .tab-element.active{
+        background-color: #f0f0f0;
+    }
+    .biolife-tab .tab-head.tab-head__default .tabs .tab-element{
+        width: 100%;
+        margin: 0;
+        background-color: #fafafa;
+    }
+    .biolife-tab .tab-head.tab-head__default .tabs .tab-element + .tab-element{
+        margin: 0;
+        margin-top: 1px;
+    }
+    .tab-head__default .tab-element .tab-link{
+        padding: 12px;
+        width: 100%;
+        margin: 0;
+    }
+    .tab-head__default .tab-element .tab-link::before{
+        display: none;
+    }
+    .biolife-banner__detail-product .bottom-info .btn{
+        min-width: 100%;
+        padding: 12px 10px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .biolife-banner__detail-product .bottom-info .btn-thin{
+        min-width: 100%;
+        padding: 10px 10px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .bn-atts-item{
+        max-width: 100%;
+        text-align: left;
+    }
+    .biolife-banner__detail-product .midle-info .pr-atts li:nth-child(odd){
+        margin-right: 0;
+    }
+    .biolife-banner__detail-product .midle-info .pr-atts li{
+        width: 100%;
+    }
+    .biolife-banner__promotion4{
+        height: 400px;
+    }
+    .slider-opt04__layout01 .buttons,
+    .slider-opt03__layout02 .buttons{
+        margin-top: 20px;
+    }
+    .slider-opt04__layout01 .buttons .btn,
+    .slider-opt03__layout02 .buttons .btn{
+        padding: 10px 20px;
+        min-width: auto;
+    }
+    .slider-opt04__layout01 .buttons .btn-thin,
+    .slider-opt03__layout02 .buttons .btn-thin{
+        padding: 8px 20px;
+        margin-left: 5px;
+    }
+    .slider-opt04__layout01 .buttons .btn-thin:not(:hover),
+    .slider-opt03__layout02 .buttons .btn-thin:not(:hover){
+        background-color: #ffffff !important;
+        color: #444444 !important;
+        border-color: #ffffff !important;
+    }
+    .slider-opt04__layout01 .text-content .first-line,
+    .slider-opt03__layout02 .text-content .first-line{
+        font-size: 22px;
+    }
+    .slider-opt04__layout01.light-version .text-content .third-line,
+    .slider-opt04__layout01.light-version .text-content .first-line{
+        color: #000000;
+        font-weight: 600;
+    }
+    .slider-opt04__layout01 .text-content .second-line,
+    .slider-opt03__layout02 .text-content .second-line{
+        font-size: 30px;
+        line-height: 1;
+        margin-top: 14px;
+    }
+    .slider-opt03__layout02 .text-content{
+        left: 15px;
+        top: 100px;
+        padding-right: 5px;
+    }
+    .slider-opt04__layout01 .text-content{
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        right: auto;
+        margin: 0;
+        padding: 15px 10px;
+        background-color: transparent;
+        width: calc(100% - 10px);
+        -webkit-transition: background-color 1.2s ease;
+        -moz-transition: background-color 1.2s ease;
+        -ms-transition: background-color 1.2s ease;
+        -o-transition: background-color 1.2s ease;
+        transition: background-color 1.2s ease;
+    }
+    .slick-active .slider-opt04__layout01.light-version .text-content{
+        background-color: rgba(255,255,255,0.8);
+    }
+    .slider-opt04__layout01 .buttons .btn{
+        font-size: 13px;
+    }
+    .slider-opt04__layout01 .buttons .btn-thin{
+        -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+        margin-left: 10px;
+    }
+    .slider-opt04__layout01 .media{
+        height: 400px;
+    }
+    .biolife-banner__style-02 .text-content,
+    .biolife-banner__style-03 .text-content,
+    .biolife-banner__style-04 .text-content{
+        min-height: auto;
+    }
+    .biolife-banner__style-14 .text2, 
+    .biolife-banner__style-09 .text2, 
+    .biolife-banner__style-03 .text2,
+    .biolife-banner__style-13 .text2, 
+    .biolife-banner__style-08 .text2, 
+    .biolife-banner__style-02 .text2{
+        font-size: 25px;
+    }
+    .main-slide .slick-arrow{
+        display: none !important;
+    }
+}
+
+@media ( max-width: 399px){
+    .biolife-gird-banners .grid-panel .list-media .media-contain{
+        height: 200px;
+    }
+    .biolife-gird-banners .grid-panel .list-media .cat-name{
+        font-size: 18px;
+        padding: 10px 10px 18px;
+    }
+    .biolife-gird-banners .grid-panel .list-media .biolife-banner__grid:not(.type-02) .banner-contain .cat-name{
+        padding: 20px 15px;
+        min-width: auto;
+        width: 100%;
+    }
+    .biolife-gird-banners .grid-panel .list-media .biolife-banner__grid:not(.type-02) .banner-contain{
+        bottom: 0;
+    }
+}
+
+@media ( max-width: 380px){
+    .biolife-banner__style-05 .banner-contain,
+    .biolife-banner__style-06 .banner-contain,
+    .biolife-banner__style-07 .banner-contain{
+        overflow: hidden;
+    }
+    .biolife-banner__style-05 .media,
+    .biolife-banner__style-06 .media,
+    .biolife-banner__style-07 .media{
+        left: -50px;
+    }
+}
+
+/*==============================*/
+.xs-margin-top-0{
+    margin-top: 0;
+}
+.xs-margin-top-10px{
+    margin-top: 10px;
+}
+.xs-margin-top-19px{
+    margin-top: 19px;
+}
+.xs-margin-top-20px{
+    margin-top: 20px;
+}
+.xs-margin-top-25px{
+    margin-top: 25px;
+}
+.xs-margin-top-30px{
+    margin-top: 30px;
+}
+.xs-margin-top-30px-im{
+    margin-top: 30px !important;
+}
+.xs-margin-top-33px{
+    margin-top: 33px;
+}
+.xs-margin-top-34px{
+    margin-top: 34px;
+}
+.xs-margin-top-36px{
+    margin-top: 36px;
+}
+.xs-margin-top-40px{
+    margin-top: 40px;
+}
+.xs-margin-top-45px{
+    margin-top: 45px;
+}
+.xs-margin-top-50px-im{
+    margin-top: 50px !important;
+}
+.xs-margin-top-50px{
+    margin-top: 50px;
+}
+.xs-margin-top-60px{
+    margin-top: 60px;
+}
+.xs-margin-top-65px{
+    margin-top: 65px;
+}
+.xs-margin-top-80px{
+    margin-top: 80px;
+}
+.xs-margin-top-80px-im{
+    margin-top: 80px !important;
+}
+.xs-margin-top-90px{
+    margin-top: 90px;
+}
+.xs-margin-top-100{
+    margin-top: 100px;
+}
+/*--------------------------*/
+.xs-margin-bottom-15px{
+    margin-bottom: 15px;
+}
+.xs-margin-bottom-16px{
+    margin-bottom: 16px;
+}
+.xs-margin-bottom-25{
+    margin-bottom: 25px;
+}
+.xs-margin-bottom-30px{
+    margin-bottom: 30px;
+}
+.xs-margin-bottom-36px{
+    margin-bottom: 36px;
+}
+.xs-margin-bottom-33px{
+    margin-bottom: 33px;
+}
+.xs-margin-bottom-40-im{
+    margin-bottom: 40px !important;
+}
+.xs-margin-bottom-46px{
+    margin-bottom: 46px;
+}
+.xs-margin-bottom-60px{
+    margin-bottom: 60px;
+}
+.xs-margin-bottom-66px{
+    margin-bottom: 66px;
+}
+.xs-margin-bottom-50px{
+    margin-bottom: 50px;
+}
+.xs-margin-bottom-50px-im{
+    margin-bottom: 50px !important;
+}
+.xs-margin-bottom-60px-im{
+    margin-bottom: 60px !important;
+}
+.xs-margin-bottom-80px{
+    margin-bottom: 80px;
+}
+/*--------------------------*/
+.xs-padding-top-10px{
+    padding-top: 10px;
+}
+.xs-padding-top-30px{
+    padding-top: 30px;
+}
+.xs-padding-bottom-50px{
+    padding-bottom: 50px;
+}
+/*--------------------------*/
+.width-100percent{ width: 100%;}
+.width-90percent{ width: 90%;}
+.width-80percent{ width: 80%;}
+.width-40percent{ width: 40%;}
+.width-30percent{ width: 30%;}
+.width-20percent{ width: 20%;}
+.width-10percent{ width: 10%;}
+.min-height-346px{ min-height: 346px;}
+
+@media ( min-width: 768px){
+    .sm-margin-top_-1px{
+        margin-top: -1px;
+    }
+    .sm-margin-top-0{
+        margin-top: 0;
+    }
+    .sm-margin-top-0-im{
+        margin-top: 0 !important;
+    }
+    .sm-margin-top-11px{
+        margin-top: 11px;
+    }
+    .sm-margin-top-19px{
+        margin-top: 19px;
+    }
+    .sm-margin-top-23px{
+        margin-top: 23px;
+    }
+    .sm-margin-top-25px{
+        margin-top: 25px;
+    }
+    .sm-margin-top-27px{
+        margin-top: 27px;
+    }
+    .sm-margin-top-30px{
+        margin-top: 30px;
+    }
+    .sm-margin-top-30px-im{
+        margin-top: 30px !important;
+    }
+    .sm-margin-top-32px{
+        margin-top: 32px;
+    }
+    .sm-margin-top-33px{
+        margin-top: 33px;
+    }
+    .sm-margin-top-34px{
+        margin-top: 34px;
+    }
+    .sm-margin-top-37px{
+        margin-top: 37px;
+    }
+    .sm-margin-top-39px{
+        margin-top: 39px;
+    }
+    .sm-margin-top-40px{
+        margin-top: 40px;
+    }
+    .sm-margin-top-44px{
+        margin-top: 44px;
+    }
+    .sm-margin-top-45px{
+        margin-top: 45px;
+    }
+    .sm-margin-top-49px{
+        margin-top: 49px;
+    }
+    .sm-margin-top-50px{
+        margin-top: 50px;
+    }
+    .sm-margin-top-53px{
+        margin-top: 53px;
+    }
+    .sm-margin-top-54px{
+        margin-top: 54px;
+    }
+    .sm-margin-top-55px{
+        margin-top: 55px;
+    }
+    .sm-margin-top-59px{
+        margin-top: 59px;
+    }
+    .sm-margin-top-60px{
+        margin-top: 60px;
+    }
+    .sm-margin-top-61px{
+        margin-top: 61px;
+    }
+    .sm-margin-top-62px{
+        margin: 62px 0 0;
+    }
+    .sm-margin-top-63px{
+        margin: 63px 0 0;
+    }
+    .sm-margin-top-64px{
+        margin-top: 64px;
+    }
+    .sm-margin-top-70px{
+        margin-top: 70px;
+    }
+    .sm-margin-top-71px{
+        margin-top: 71px;
+    }
+    .sm-margin-top-74px{
+        margin-top: 74px;
+    }
+    .sm-margin-top-76px{
+        margin-top: 76px;
+    }
+    .sm-margin-top-80px{
+        margin-top: 80px;
+    }
+    .sm-margin-top-84px{
+        margin-top: 84px;
+    }
+    .sm-margin-top-93px{
+        margin-top: 93px;
+    }
+    .sm-margin-top-96px{
+        margin-top: 96px;
+    }
+    .sm-margin-top-100px{
+        margin-top: 100px;
+    }
+    .sm-margin-top-112px{
+        margin-top: 112px;
+    }
+    .sm-margin-top-193px{
+        margin-top: 93px;
+    }
+    .sm-margin-top_58px{
+        margin-top: -58px;
+    }
+    /*--------------------------*/
+    .sm-margin-bottom-0{
+        margin-bottom: 0;
+    }
+    .sm-margin-bottom-0-im{
+        margin-bottom: 0 !important;
+    }
+    .sm-margin-bottom-24px{
+        margin-bottom: 24px;
+    }
+    .sm-margin-bottom-26px{
+        margin-bottom: 26px;
+    }
+    .sm-margin-bottom-35-im{
+        margin-bottom: 35px !important;
+    }
+    .sm-margin-bottom-36px{
+        margin-bottom: 36px;
+    }
+    .sm-margin-bottom-57px{
+        margin-bottom: 57px;
+    }
+    .sm-margin-bottom-57-im{
+        margin-bottom: 57px !important;
+    }
+    .sm-margin-bottom-70px{
+        margin-bottom: 70px;
+    }
+    .sm-margin-bottom-73px{
+        margin-bottom: 73px;
+    }
+    .sm-margin-bottom-76px{
+        margin-bottom: 76px;
+    }
+    .sm-margin-bottom-77px{
+        margin-bottom: 77px;
+    }
+    .sm-margin-bottom-80px{
+        margin-bottom: 80px;
+    }
+    .sm-margin-bottom-89px{
+        margin-bottom: 89px;
+    }
+    .sm-margin-bottom-120px{
+        margin-bottom: 120px;
+    }
+    /*--------------------------*/
+    .sm-padding-top-14px{
+        padding-top: 14px;
+    }
+    .sm-padding-top-48px{
+        padding-top: 48px;
+    }
+    .sm-padding-top-54px{
+        padding-bottom: 54px;
+    }
+    .sm-padding-top-64px{
+        padding-top: 66px;
+    }
+    .sm-padding-top-75px{
+        padding-top: 75px;
+    }
+    .sm-padding-top-72px{
+        padding-bottom: 72px;
+    }
+    /*--------------------------*/
+    .sm-padding-bottom-80px{
+        padding-bottom: 80px;
+    }
+    .sm-padding-bottom-39px{
+        padding-bottom: 39px;
+    }
+
+    /*********************************************/
+    .tab-head__sample-layout.bg-tab-v5 .tab-element .tab-link:hover,
+    .tab-head__sample-layout.bg-tab-v5 .active .tab-link{
+        background: url("../images/bg_tab-v5.png");
+        color: #222222;
+    }
+    .header-area.layout-05 .header-middle{
+        margin-bottom: 32px;
+    }
+    .slider-opt03__layout01.mode-03 .text-content{
+        top: 51%;
+        right: 19%;
+        margin: 0 14px 0 0;
+    }
+    .tab-head__icon-top-layout.background-tab-include a{
+        line-height: 0;
+    }
+    .tab-head__icon-top-layout.background-tab-include a>span:not(.biolife-icon){
+        display: block;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #888888;
+        line-height: 1;
+        font-weight: 600;
+    }
+    .tab-head__icon-top-layout.background-tab-include .active a>span:not(.biolife-icon){
+        color: #dd6b0c;
+    }
+    .tab-head__icon-top-layout.background-tab-include .biolife-icon{
+        background-image: url(../images/home-01/tab-bg-01.png);
+        display: inline-block;
+        width: 106px;
+        text-align: center;
+        padding: 30px;
+        color: #ffffff;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        margin-bottom: 3px;
+    }
+    .tab-head__icon-top-layout.background-tab-include .elm-02 .biolife-icon{
+        background-image: url(../images/home-01/tab-bg-02.png);
+    }
+    .tab-head__icon-top-layout.background-tab-include .elm-03 .biolife-icon{
+        background-image: url(../images/home-01/tab-bg-03.png);
+    }
+    .tab-head__icon-top-layout.background-tab-include .elm-04 .biolife-icon{
+        background-image: url(../images/home-01/tab-bg-04.png);
+    }
+    .tab-head__icon-top-layout.background-tab-include .active .biolife-icon{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .header-area.layout-01 .header-middle{
+        padding: 20px 0 28px;
+    }
+    .header-area.layout-01 .header-middle .biolife-logo{
+        margin-top: 7px;
+        display: block;
+    }
+    .header-area.layout-01 .header-middle .header-search-bar{
+        padding-top: 1px;
+    }
+
+    .slider-opt03__layout01.mode-02 .text-content{
+        top: 39%;
+        right: 19%;
+        margin: 0 12px 0 0;
+    }
+    .tab-head__icon-top-layout.type-02 a{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 6px;
+    }
+    .biolife-banner__promotion4.v2 .text-content{
+        margin-left: 7px;
+        top: 76px;
+    }
+    .footer.layout-02 .footer-item .section-title{
+        font-size: 22px;
+    }
+}
+
+@media ( min-width: 992px){
+    .md-full-width{
+        width: 100%;
+    }
+    .md-max-width-270px{
+        max-width: 270px;
+    }
+    .md-width-970{
+        width: 970px;
+    }
+    .md-width-750{
+        width: 750px;
+    }
+    .md-width-640{
+        width: 640px;
+    }
+    .md-margin-top_10px{
+        margin-top: -10px !important;
+    }
+    .md-margin-top-0{
+        margin-top: 0;
+    }
+    .md-margin-top-6px{
+        margin-top: 6px;
+    }
+    .md-margin-top-5px{
+        margin-top: 5px;
+    }
+    .md-margin-top-9{
+        margin-top: 9px;
+    }
+    .md-margin-top-50px{
+        margin-top: 50px;
+    }
+    .md-margin-top-61px{
+        margin-top: 61px;
+    }
+    .md-margin-top-74px{
+        margin-top: 74px;
+    }
+    /*-------------------------------*/
+    .md-margin-bottom-0{
+        margin-bottom: 0;
+    }
+    .md-margin-bottom-30{
+        margin-bottom: 30px;
+    }
+    .md-margin-bottom-35-im{
+        margin-bottom: 35px !important;
+    }
+    .md-margin-bottom-39{
+        margin-bottom: 39px;
+    }
+    .md-margin-bottom-46{
+        margin-bottom: 46px;
+    }
+    .md-margin-bottom-50{
+        margin-bottom: 50px;
+    }
+    .md-margin-bottom-83{
+        margin-bottom: 83px;
+    }
+    .md-padding-top-55{
+        padding-top: 55px;
+    }
+    .md-padding-left-23{
+        padding-left: 23px;
+    }
+    .md-padding-left-25{
+        padding-left: 25px;
+    }
+    .md-padding-left-50{
+        padding-left: 50px;
+    }
+    .md-padding-left-57{
+        padding-left: 57px;
+    }
+    /***************************************************/
+    .sumary-product.single-layout{
+        min-height: 430px;
+    }
+    .biolife-brd-container:not(.transparent-effect) figure{
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    .biolife-brd-container:not(.transparent-effect) figure>img{
+        -webkit-transition: transform 0.3s ease;
+        -moz-transition: transform 0.3s ease;
+        -ms-transition: transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    .biolife-brd-container:not(.transparent-effect):hover figure>img{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .post-item.effect-04 .thumbnail,
+    .post-item.effect-03 .thumbnail,
+    .post-item.effect-02 .thumbnail,
+    .post-item.effect-01 .thumbnail{
+        position: relative;
+        overflow: hidden;
+    }
+    .post-item.effect-04 .thumbnail>a,
+    .post-item.effect-02 .thumbnail>a,
+    .post-item.effect-01 .thumbnail>a{
+        display: block;
+    }
+    .post-item.effect-04 .thumbnail>a::before,
+    .post-item.effect-01 .thumbnail>a::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        border: 1px solid #e6e6e6;
+        z-index: 5;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .post-item.effect-04 .thumbnail>a::after,
+    .post-item.effect-01 .thumbnail>a::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        visibility: hidden;
+        z-index: 2;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .post-item.effect-04 .thumbnail:hover .post-date,
+    .post-item.effect-01 .thumbnail:hover .post-date{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        visibility: hidden;
+    }
+    .post-item.effect-04 .thumbnail:hover>a::before,
+    .post-item.effect-01 .thumbnail:hover>a::before{
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        visibility: visible;
+    }
+    .post-item.effect-04 .thumbnail:hover>a::after,
+    .post-item.effect-01 .thumbnail:hover>a::after{
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .post-item.effect-02 .thumbnail img{
+        display: inline-block;
+        -webkit-transition: all 0.5s cubic-bezier(0.34,1.61,.7,1);
+        transition: all 0.5s cubic-bezier(0.34,1.61,.7,1);
+    }
+    .post-item.effect-02 .thumbnail:hover img{
+        -webkit-transform: scale(1.1) rotate(5deg);
+        transform: scale(1.1) rotate(5deg);
+    }
+    .post-item.effect-03 .thumbnail>a:before,
+    .post-item.effect-02 .thumbnail>a:before{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.2);
+        z-index: 4;
+        -webkit-transition: all 0.5s cubic-bezier(0.34,1.61,.7,1);
+        transition: all 0.5s cubic-bezier(0.34,1.61,.7,1);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        visibility: hidden;
+    }
+    .post-item.effect-03 .thumbnail:hover>a:before,
+    .post-item.effect-02 .thumbnail:hover>a:before{
+        opacity: 1;
+        filter: alpha(opacity=100);
+        visibility: visible;
+    }
+    .post-item.effect-04 .thumbnail img,
+    .post-item.effect-03 .thumbnail img{
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .post-item.effect-04 .thumbnail:hover img,
+    .post-item.effect-03 .thumbnail:hover img{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .product-category.grid-style .products-list li{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .biolife-banner__grid.type-02 .media-contain::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 0;
+        background-image: linear-gradient(to top, #dd6b0c , transparent);
+        z-index: 1;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: all 950ms ease;
+        -moz-transition: all 950ms ease;
+        -ms-transition: all 950ms ease;
+        -o-transition: all 950ms ease;
+        transition: all 950ms ease;
+    }
+    .biolife-banner__grid.type-02.bn-elm-02 .media-contain::before{
+        background-image: linear-gradient(to top, #05a503 , transparent);
+    }
+    .biolife-banner__grid.type-02.bn-elm-03 .media-contain::before{
+        background-image: linear-gradient(to top, #5d6a96 , transparent);
+    }
+    .biolife-banner__grid.type-02.bn-elm-04 .media-contain::before{
+        background-image: linear-gradient(to top, #f81c56 , transparent);
+    }
+    .biolife-banner__grid.type-02.bn-elm-05 .media-contain::before{
+        background-image: linear-gradient(to top, #433a55 , transparent);
+    }
+    .biolife-banner__grid.type-02.bn-elm-06 .media-contain::before{
+        background-image: linear-gradient(to top, #fd2046 , transparent);
+    }
+    .biolife-banner__grid.type-02:hover .media-contain::before{
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        height: 110px;
+    }
+    .header-area.layout-01 .biolife-sticky-object:not(.pre-sticky) .biolife-cart-info{
+        margin-top: 6px;
+    }
+    .header-area.layout-01 .biolife-sticky-object .primary-menu>ul{
+        position: initial;
+    }
+    .header-area.layout-01 .biolife-sticky-object .primary-menu{
+        margin-top: 16px;
+        position: relative;
+        margin-left: -30px;
+        padding-left: 30px;
+    }
+    .header-area:not(.layout-01):not(.layout-02) .primary-menu>ul .wrap-megamenu{
+        margin-left: -30px;
+    }
+    .header-area.layout-01 .biolife-cart-info .minicart-block{
+        margin-left: 0;
+    }
+    .biolife-popup .modal-dialog{
+        min-width: 770px;
+        margin-top: 200px;
+    }
+    .biolife-title-box__bold-center .subtitle{
+        margin: 0;
+    }
+    .biolife-title-box__bold-center .main-title{
+        font-size: 40px;
+        margin-top: 6px;
+    }
+    .biolife-title-box__icon-at-top-style .main-title{
+        font-size: 40px;
+        margin-top: 4px;
+    }
+    .header-area.layout-02 .mobile-search-content{
+        display: block;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 350ms ease;
+        -moz-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease;
+    }
+    .header-area.layout-02 .mobile-search .mobile-search-content{
+        display: block;
+    }
+    body.open-mobile-search .header-area.layout-02  .mobile-search-content{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    #sidebar.mobile-version{
+        position: fixed;
+        top: 0;
+        left: -320px;
+        width: 300px;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .scale-effect.contain-product .product-thumb{
+        overflow: hidden;
+    }
+    .scale-effect.contain-product .product-thumb .link-to-product>img{
+        display: inline-block;
+        -webkit-transition: transform 350ms ease;
+        -moz-transition: transform 350ms ease;
+        -ms-transition: transform 350ms ease;
+        -o-transition: transform 350ms ease;
+        transition: transform 350ms ease;
+    }
+    .scale-effect.contain-product:hover .product-thumb .link-to-product>img{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .biolife-banner__style-12 .banner-contain .media .bn-link img,
+    .biolife-banner__style-11 .banner-contain .media .bn-link img{
+        display: inline-block;
+        -webkit-transition: transform 0.8s ease;
+        -moz-transition: transform 0.8s ease;
+        -ms-transition: transform 0.8s ease;
+        -o-transition: transform 0.8s ease;
+        transition: transform 0.8s ease;
+    }
+    .biolife-banner__style-12:hover .banner-contain .media .bn-link img,
+    .biolife-banner__style-11:hover .banner-contain .media .bn-link img{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .slider-opt04__layout01.light-version .text-content{
+        left: 38px;
+    }
+    .slider-opt04__layout01.light-version .text-content .third-line{
+        margin-left: 8px;
+    }
+    .biolife-banner__promotion4 .position-1 img,
+    .biolife-cat-box-item .cat-thumb img{
+        display: inline-block;
+        -webkit-transition: all 350ms ease;
+        -moz-transition: all 350ms ease;
+        -ms-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    .biolife-banner__promotion4 .position-1:hover img,
+    .biolife-cat-box-item:hover .cat-thumb img{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .contain-product:not(.pr-detail-layout):not(.contain-product__right-info-layout):not(.contain-product__deal-layout):not(.none-overlay):not(.style-widget) .product-thumb{
+        padding: 10px 10px 0 10px;
+    }
+    .advance-product-box_countdown .contain-product .product-thumb{
+        padding: 11px 8px 0 !important;
+    }
+    .page-contain{
+        position: relative;
+    }
+    .page-contain:not(.category-page){
+        z-index: 10;
+    }
+    .page-contain #sidebar:not(.blog-sidebar){
+        margin-top: -6px;
+    }
+    .page-contain.right-sidebar.category-page #main-content,
+    .page-contain.left-sidebar.category-page #main-content{
+        margin-top: -10px;
+    }
+    .page-contain.left-sidebar #main-content{
+        float: right;
+    }
+    .biolife-carousel.products-list:not(.default-product-style){
+        margin: -5px -15px;
+    }
+    .biolife-carousel.products-list:not(.default-product-style) .slick-list{
+        padding: 5px;
+    }
+    .biolife-carousel.products-list.vertical-layout-02{
+        margin: -15px;
+    }
+    .biolife-carousel.products-list.vertical-layout-02 .slick-list{
+        padding: 15px;
+    }
+    .biolife-carousel.products-list:not(.default-product-style):hover{
+        margin-bottom: -150px;
+    }
+    .biolife-carousel.products-list:not(.default-product-style):hover .slick-list{
+        padding-bottom: 150px;
+    }
+    .contain-product.layout-02:hover,
+    .contain-product.layout-default:hover{
+        -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    }
+    .header-search-bar.layout-01 .input-text{
+        max-width: 450px;
+    }
+    .biolife-sticky-object.pre-sticky{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: -110%;
+        -webkit-transition: all 1200ms ease;
+        -moz-transition: all 1200ms ease;
+        -o-transition: all 1200ms ease;
+        transition: all 1200ms ease;
+        background-color: #ffffff;
+        z-index: 50;
+        -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.2);
+        -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.2);
+        box-shadow: 0 0 9px 0 rgba(0,0,0,.2);
+        padding: 10px 0;
+    }
+    .biolife-sticky-object.pre-sticky.is-sticky{
+        top: 0;
+    }
+    .header-area.layout-01 .biolife-sticky-object.pre-sticky .primary-menu{
+        margin-top: 15px;
+    }
+    .contain-product.layout-default .info{
+        position: relative;
+    }
+    .contain-product.layout-default .slide-down-box{
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 5px 5px 0 rgb(0 0 0 / 100%);
+        position: absolute;
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+        transform: translateY(-20px);
+        top: 100%;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        z-index: 10;
+        background-color: #ffffff;
+        padding-top: 11px;
+        padding-bottom: 24px;
+    }
+	
+	
+	
+    .contain-product.layout-default:hover .slide-down-box{
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+        filter: alpha(opacity=100);
+        visibility: visible;
+    }
+    .biolife-nav.nav-86px{
+        margin-top: 38px;
+        margin-bottom: 33px;
+    }
+}
+
+
+
+
+@media ( min-width: 768px) and ( max-width: 991px) {
+    .slider-opt03__layout02 .text-content{
+        left: 20%;
+    }
+    .contain-product__right-info-layout .product-thumb{
+        width: 40%;
+    }
+    .top-functions-area{
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    .advance-product-box_countdown .biolife-countdown>span+span{
+        margin-left: 4px;
+    }
+}
+
+@media ( min-width: 480px) and ( max-width: 767px){
+    .slider-opt04__layout01.light-version .text-content{
+        background-color: transparent;
+        padding: 20px 10px;
+        left: 30px;
+        right: auto;
+    }
+    .slick-slide.slick-active .slider-opt04__layout01.light-version .text-content{
+        background-color: rgba(255, 255, 255, 0.8);
+        -webkit-transition: background-color 1.2s ease;
+        -moz-transition: background-color 1.2s ease;
+        -ms-transition: background-color 1.2s ease;
+        -o-transition: background-color 1.2s ease;
+        transition: background-color 1.2s ease;
+    }
+}
+
+@media ( max-width: 1199px) {
+    .products-list.biolife-carousel.nav-none-after-1k2 .slick-arrow.biolife-icon{
+        display: none !important;
+    }
+}
+
+@media ( max-width: 1100px) {
+    .biolife-carousel.nav-none-on-mobile.nav-center-bold .slick-arrow.prev,
+    .biolife-carousel.nav-none-on-mobile.nav-center-bold .slick-arrow.next,
+    .biolife-carousel.nav-none-on-mobile.nav-center .slick-arrow.prev,
+    .biolife-carousel.nav-none-on-mobile.nav-center .slick-arrow.next,
+    .biolife-carousel.nav-none-on-mobile.nav-top-right .slick-arrow.prev,
+    .biolife-carousel.nav-none-on-mobile.nav-top-right .slick-arrow.next,
+    .biolife-carousel.nav-none-on-mobile.nav-center-02 .slick-arrow.prev,
+    .biolife-carousel.nav-none-on-mobile.nav-center-02 .slick-arrow.next,
+    .biolife-carousel.nav-none-on-mobile.nav-center-03 .slick-arrow.prev,
+    .biolife-carousel.nav-none-on-mobile.nav-center-03 .slick-arrow.next{
+        display: none !important;
+    }
+}
+
+
+
+
+.qty-input{
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+}
+.qty-input input{
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+    border-top: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    border-left: 0;
+    border-right: 0;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    line-height: 1;
+    height: 23px;
+}
+.qty-input .qty-btn{
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    position: relative;
+    width: 27px;
+    height: 23px;
+    vertical-align: top;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+.qty-input .btn-down{
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+}
+.qty-input .qty-btn::after,
+.qty-input .qty-btn::before{
+    content: '';
+    display: block;
+    background-color: #7f7f7f;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 10px;
+    height: 2px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.qty-input .btn-up::before{
+    left: 6px;
+}
+.qty-input .btn-up::after{
+    height: 10px;
+    width: 2px;
+    left: 10px;
+}
+.qty-input .qty-btn:hover::after,
+.qty-input .qty-btn:hover::before{
+    background-color: #000000;
+}
